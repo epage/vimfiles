@@ -3,7 +3,7 @@
 Deploy
 ```
 cd ~
-git clone https://github.com/epage/vimfiles.git .vim
+git clone --recursive https://github.com/epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
 cp .vim/extra/.gitconfig ~/
 ```
@@ -20,6 +20,9 @@ Update
 cd ~/.vim
 git submodule foreach git pull
 git add bundle
+
+# Or is it
+git submodule update --recursive
 ```
 
 # Machine setup
