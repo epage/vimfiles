@@ -1,0 +1,21 @@
+[user]
+	name = Ed Page
+	email = <TODO>
+[core]
+	autocrlf = false
+
+
+[alias]
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	pull-upstream = "!git pull upstream master"
+	force-pull-upstream = "!git fetch upstream; git reset --hard upstream/master"
+
+	glog = log --graph --all --oneline --decorate
+	unadd = reset HEAD
+	uncommit = reset --soft HEAD~1
+	publish = "!git push -u origin $(git branch-name)"
+	unpublish = "!git push origin :$(git branch-name)"
+	rebase-branch = "!git rebase -i `git merge-base master HEAD`"
+	topic-start = '!branch=$1; git checkout master; git pull-upstream; git checkout -b "$branch" master'
+	topic-pull = '!branch=$(git branch-name); git checkout master; git pull-upstream; git checkout "$branch"; git rebase-branch'
+	topic-push = '!branch=$(git branch-name); git push -u origin "$branch"'
