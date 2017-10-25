@@ -4,8 +4,8 @@ Deploy
 ```
 cd ~
 git clone https://github.com/epage/vimfiles.git .vim
-copy .vim/extra/.vimrc ~/
-copy .vim/extra/.gitcnfig ~/
+cp .vim/extra/.vimrc ~/
+cp .vim/extra/.gitconfig ~/
 ```
 Note: be sure to set the email address in `.gitconfig`.
 
