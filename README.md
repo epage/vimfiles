@@ -50,7 +50,7 @@ elevate choco install ConEmu
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get build-essetial pkg-config libssl-dev cmake
+sudo apt-get build-essetial pkg-config libssl-dev cmake curl
 curl https://sh.rustup.rs -sSf | sh
 source ~/.cargo/env
 cargo install ripgrep
