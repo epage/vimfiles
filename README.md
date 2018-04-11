@@ -43,6 +43,7 @@ elevate choco install ripgrep
 elevate choco install steam
 elevate choco install vim
 elevate choco install ConEmu
+elevate choco install vcxsrv 
 ```
 
 ## Linux
