@@ -18,7 +18,7 @@ git submodule add REPO
 Update
 ```
 cd ~/.vim
-git submodule foreach git pull
+git submodule foreach git pull origin master
 git add bundle
 
 # Or is it
@@ -43,7 +43,7 @@ elevate choco install ripgrep
 elevate choco install steam
 elevate choco install vim
 elevate choco install ConEmu
-elevate choco install vcxsrv 
+elevate choco install vcxsrv
 ```
 
 ## Linux
