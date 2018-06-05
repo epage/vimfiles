@@ -58,3 +58,6 @@
 [submodule "bundle/wildfire.vim"]
 	path = bundle/wildfire.vim
 	url = git://github.com/gcmt/wildfire.vim
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
