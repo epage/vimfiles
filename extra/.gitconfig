@@ -1,9 +1,10 @@
+[core]
+	editor = vim
 [user]
 	name = Ed Page
 	email = <TODO>
 [core]
 	autocrlf = false
-
 
 [alias]
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
@@ -16,6 +17,8 @@
 	publish = "!git push -u origin $(git branch-name)"
 	unpublish = "!git push origin :$(git branch-name)"
 	rebase-branch = "!git rebase -i `git merge-base master HEAD`"
-	topic-start = '!branch=$1; git checkout master; git pull-upstream; git checkout -b "$branch" master'
-	topic-pull = '!branch=$(git branch-name); git checkout master; git pull-upstream; git checkout "$branch"; git rebase-branch'
-	topic-push = '!branch=$(git branch-name); git push -u origin "$branch"'
+	topic-start = "!branch=$1; git checkout master; git pull-upstream; git checkout -b \"$branch\""
+	topic-pull = "!branch=$(git branch-name); git checkout master; git pull-upstream; git checkout \"$branch\"; git rebase master"
+	topic-push = "!branch=$(git branch-name); git push -u origin \"$branch\""
+[push]
+	default = simple
