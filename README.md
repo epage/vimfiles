@@ -31,23 +31,23 @@ git submodule update --recursive
 
 ```bash
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-choco install elevate
+choco install elevate -y
 ```
 
 ## Windows, non-elevated
 
 ```bash
-el choco install git
-el choco install 7zip
-el choco install ripgrep
-el choco install steam
-el choco install vim
-el choco install ConEmu
-el choco install vcxsrv
-el choco install winmerge
+el choco install git -y
+el choco install 7zip -y
+el choco install ripgrep -y
+el choco install steam -y
+el choco install vim -y
+el choco install ConEmu -y
+el choco install vcxsrv -y
+el choco install winmerge -y
 rem For Work
-el choco install insted
-el choco install p4v
+el choco install insted -y
+el choco install p4v -y
 ```
 
 ## Linux
