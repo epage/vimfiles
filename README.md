@@ -37,17 +37,17 @@ choco install elevate
 ## Windows, non-elevated
 
 ```bash
-elevate choco install git
-elevate choco install 7zip
-elevate choco install ripgrep
-elevate choco install steam
-elevate choco install vim
-elevate choco install ConEmu
-elevate choco install vcxsrv
-elevate choco install winmerge
+el choco install git
+el choco install 7zip
+el choco install ripgrep
+el choco install steam
+el choco install vim
+el choco install ConEmu
+el choco install vcxsrv
+el choco install winmerge
 rem For Work
-elevate choco install insted
-elevate choco install p4v
+el choco install insted
+el choco install p4v
 ```
 
 ## Linux
