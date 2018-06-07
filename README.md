@@ -45,6 +45,7 @@ elevate choco install vim
 elevate choco install ConEmu
 elevate choco install vcxsrv
 elevate choco install winmerge
+elevate choco install insted
 ```
 
 ## Linux
