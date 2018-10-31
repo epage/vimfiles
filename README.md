@@ -55,7 +55,7 @@ el choco install p4v -y
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get build-essetial pkg-config libssl-dev cmake curl
+sudo apt-get build-essential pkg-config libssl-dev cmake curl
 curl https://sh.rustup.rs -sSf | sh
 source ~/.cargo/env
 cargo install ripgrep
