@@ -67,3 +67,6 @@
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "bundle/gina.vim"]
+	path = bundle/gina.vim
+	url = https://github.com/lambdalisue/gina.vim.git

@@ -9,5 +9,15 @@ if has("gui_running")
     set guifont=consolas:h11
 endif
 
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gina#component#repo#branch'
+      \ },
+      \ }
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
