@@ -2,7 +2,7 @@
 	editor = vim
 [user]
 	name = Ed Page
-	email = <TODO>
+	email = eopage@gmail.com
 [core]
 	autocrlf = false
 
@@ -22,3 +22,5 @@
 	topic-push = "!branch=$(git branch-name); git push -u origin \"$branch\""
 [push]
 	default = simple
+[rebase]
+	autosquash = true
