@@ -22,5 +22,7 @@
 	topic-push = "!branch=$(git branch-name); git push -u origin \"$branch\""
 [push]
 	default = simple
+[remote "origin"]
+	prune = true
 [rebase]
 	autosquash = true
