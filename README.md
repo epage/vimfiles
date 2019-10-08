@@ -61,6 +61,34 @@ source ~/.cargo/env
 cargo install ripgrep
 ```
 
+## Mac
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew cask install iterm2
+brew install git
+brew install macvim
+brew install ripgrep
+brew install fd
+brew install exa
+brew install ctags
+
+mkdir ~/.bash
+cd .bash
+git clone git://github.com/jimeh/git-aware-prompt.git
+```
+
+Add to `.bash_profile`
+
+```bash
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/colors.sh"
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+export PS1="\w \[\$txtcyn\]\$(__git_ps1 '[%s]')\[\$txtrst\] \$ "
+
+export EDITOR=vim
+```
 
 ## Regular prompt
 
