@@ -56,7 +56,7 @@ el choco install p4v -y
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get build-essential pkg-config libssl-dev cmake curl
-curl https://sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
 cargo install ripgrep
 ```
@@ -73,10 +73,14 @@ brew install ripgrep
 brew install fd
 brew install exa
 brew install ctags
+brew cask install diffmerge
 
 mkdir ~/.bash
 cd .bash
 git clone git://github.com/jimeh/git-aware-prompt.git
+
+curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
+source ~/.cargo/env
 ```
 
 Add to `.bash_profile`
@@ -95,10 +99,11 @@ export EDITOR=vim
 ```bash
 rustup install beta
 rustup install nightly
-rustup run nightly cargo install clippy
-cargo install rustfmt --ver 0.8.6
+rustup component add clippy
+rustup component add rustfmt
 cargo install fd-find
 cargo install cargo-tree
 cargo-install cargo-outdated
 cargo install cargo-llvm-lines
+cargo install cargo-release
 ```
