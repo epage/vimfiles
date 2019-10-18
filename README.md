@@ -68,6 +68,7 @@ cargo install ripgrep
 
 brew cask install iterm2
 brew install git
+brew install git bash-completion
 brew install macvim
 brew install ripgrep
 brew install fd
@@ -83,13 +84,23 @@ curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
 ```
 
-Add to `.bash_profile`
+Add to `.bash_profile` for local system
 
 ```bash
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/colors.sh"
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 export PS1="\w \[\$txtcyn\]\$(__git_ps1 '[%s]')\[\$txtrst\] \$ "
+
+export EDITOR=vim
+```
+
+and for remote systems
+
+```bash
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/colors.sh"
+export PS1="\[\$txtblu\]\u@\h\[\$txtrst\] \w \$ "
 
 export EDITOR=vim
 ```
