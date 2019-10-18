@@ -14,3 +14,6 @@ defscrollback 30000
 
 # Act as if each screen is a fresh login (ie load the right bash files)
 shell -$SHELL
+
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][ %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
