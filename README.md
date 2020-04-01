@@ -67,13 +67,13 @@ cargo install ripgrep
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew cask install iterm2
-brew install git
 brew install git bash-completion
 brew install macvim
 brew install ripgrep
 brew install fd
 brew install exa
 brew install ctags
+brew install tmux
 brew cask install diffmerge
 
 mkdir ~/.bash
