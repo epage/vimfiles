@@ -75,7 +75,10 @@ brew install fd
 brew install exa
 brew install ctags
 brew install tmux
-brew cask install diffmerge
+brew install flake8
+brew install shfmt
+brew install python@3.8
+brew cask install diffmerge firefox iterm2 dropbox sweet-home3d
 
 mkdir ~/.bash
 cd .bash
