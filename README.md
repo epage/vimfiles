@@ -86,6 +86,10 @@ git clone git://github.com/jimeh/git-aware-prompt.git
 
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
+rustup component add rustfmt
+rustup component add clippy
+rustup toolchain install beta
+rustup toolchain install nightly
 ```
 
 Add to `.bash_profile` for local system
