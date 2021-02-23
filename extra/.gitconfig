@@ -29,6 +29,12 @@
 	topic-pull = "!branch=$(git branch-name); git checkout master; git pull-upstream; git checkout \"$branch\"; git rebase master"
 	topic-push = "!branch=$(git branch-name); git push -u origin \"$branch\""
 
+[diff]
+	algorithm = histogram
+
+[log]
+	follow = true
+
 [push]
 	default = current
 
