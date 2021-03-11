@@ -20,29 +20,30 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'bling/vim-bufferline'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'epage/vim-epage'
-Plug 'gcmt/wildfire.vim'
-Plug 'henrik/vim-indexed-search'
-Plug 'mhinz/vim-signify'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-vinegar'
-Plug 'vim-scripts/a.vim', { 'on':  'A' }
+Plug 'epage/vim-epage'
+
 Plug 'w0ng/vim-hybrid'
-Plug 'cespare/vim-toml', { 'for': 'toml' }
+
+Plug 'bling/vim-bufferline'
 Plug 'itchyny/lightline.vim'
-Plug 'justinmk/vim-dirvish'
+Plug 'henrik/vim-indexed-search'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'mhinz/vim-signify'
 Plug 'kien/rainbow_parentheses.vim'
+
+Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
+
 Plug 'lambdalisue/gina.vim'
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/a.vim', { 'on':  'A' }
 Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
 Plug 'mbbill/undotree/', { 'on':  'UndotreeToggle' }
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'rust-lang/rust.vim'
-Plug 'sgur/vim-editorconfig'
-Plug 'sophacles/vim-bundle-mako'
 Plug 'tpope/vim-eunuch', { 'on':  ['Delete', 'Unlink', 'Move', 'Rename', 'Chmod', 'Mkdir', ] }
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'sgur/vim-editorconfig'
 Plug 'w0rp/ale'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'cespare/vim-toml', { 'for': 'toml' }
 call plug#end()
