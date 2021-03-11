@@ -27,7 +27,6 @@ Plug 'w0ng/vim-hybrid'
 
 Plug 'bling/vim-bufferline'
 Plug 'itchyny/lightline.vim'
-Plug 'henrik/vim-indexed-search'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mhinz/vim-signify'
 Plug 'kien/rainbow_parentheses.vim'
