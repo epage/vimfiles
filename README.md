@@ -9,21 +9,9 @@ cp .vim/extra/.gitconfig ~/
 ```
 Note: be sure to set the email address in `.gitconfig`.
 
-Add
-```bash
-cd ~/.vim/bundle
-git submodule add REPO
-```
-
-Update
-```bash
-cd ~/.vim
-git submodule foreach git pull origin master
-git add bundle
-
-# Or is it
-git submodule update --recursive
-```
+- Initialize plugins: `:PlugInstall`
+- Update plugins: `:PlugUpdate`
+- Cleanup removed plugins: `:PlugClean`
 
 # Machine setup
 

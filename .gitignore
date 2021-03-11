@@ -1,3 +1,5 @@
+/autoload/plug.vim
+/plugged
 /view
 /undo
 /backup
