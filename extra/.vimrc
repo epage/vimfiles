@@ -31,15 +31,17 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mhinz/vim-signify'
 Plug 'kien/rainbow_parentheses.vim'
 
-Plug 'tpope/vim-vinegar'
-Plug 'justinmk/vim-dirvish'
-
-Plug 'lambdalisue/gina.vim'
+Plug 'vim-scripts/nextval'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-scripts/a.vim', { 'on':  'A' }
 Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
 Plug 'mbbill/undotree/', { 'on':  'UndotreeToggle' }
 Plug 'tpope/vim-eunuch', { 'on':  ['Delete', 'Unlink', 'Move', 'Rename', 'Chmod', 'Mkdir', ] }
+Plug 'lambdalisue/gina.vim', { 'on':  'Gina' }
+
+Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
+
+Plug 'vim-scripts/a.vim', { 'on':  'A' }
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'sgur/vim-editorconfig'
 Plug 'w0rp/ale'
