@@ -13,6 +13,8 @@ let g:lightline = {
       \ },
       \ }
 
+let g:rainbow_active = 1
+
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -29,7 +31,7 @@ Plug 'bling/vim-bufferline'
 Plug 'itchyny/lightline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mhinz/vim-signify'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'luochen1990/rainbow'
 
 Plug 'vim-scripts/nextval'
 Plug 'ctrlpvim/ctrlp.vim'
