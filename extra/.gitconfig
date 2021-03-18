@@ -18,7 +18,7 @@
 
 	unadd = reset HEAD
 	uncommit = reset --soft HEAD~1
-	amend = commit --amend --no-edit
+	amend = commit --amend --no-edit --no-verify
 
 	publish = "!git push -u origin $(git branch-name)"
 	unpublish = "!git push origin :$(git branch-name)"
