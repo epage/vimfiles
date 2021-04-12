@@ -88,6 +88,8 @@ source "${GITAWAREPROMPT}/colors.sh"
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 export PS1="\w \[\$txtcyn\]\$(__git_ps1 '[%s]')\[\$txtrst\] \$ "
 
+export MANPAGER="vim -M +MANPAGER -"
+
 export EDITOR=vim
 ```
 
@@ -97,6 +99,8 @@ and for remote systems
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/colors.sh"
 export PS1="\[\$txtblu\]\u@\h\[\$txtrst\] \w \$ "
+
+export MANPAGER="vim -M +MANPAGER -"
 
 export EDITOR=vim
 ```
