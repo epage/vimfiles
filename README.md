@@ -3,9 +3,10 @@
 Deploy
 ```bash
 cd ~
-git clone --recursive https://github.com/epage/vimfiles.git .vim
+git clone https://github.com/epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
 cp .vim/extra/.gitconfig ~/
+mkdir ~/.config && cp .vim/extra/starship.toml ~/.config
 ```
 Note: be sure to set the email address in `.gitconfig`.
 
@@ -44,9 +45,34 @@ el choco install p4v -y
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get build-essential pkg-config libssl-dev cmake curl
+sudo apt install universal-ctags
+sudo apt install ripgrep
+sudo apt install tmux
+
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
-cargo install ripgrep
+rustup component add rustfmt
+rustup component add clippy
+rustup toolchain install beta
+rustup toolchain install nightly
+
+mkdir ~/bin
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+unzip FireCode.zip -d ~/.fonts && rm FireCode.zip
+fc-cache -f -v
+curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
+```
+
+Add to `.bashrc`
+
+```bash
+export MANPAGER="vim -M +MANPAGER -"
+
+export EDITOR=vim
+
+export PATH=$PATH:$HOME/bin
+
+eval "$(starship init bash)"
 ```
 
 ## Mac
@@ -80,25 +106,10 @@ rustup toolchain install beta
 rustup toolchain install nightly
 ```
 
-Add to `.bash_profile` for local system
+Add to `.bash_profile`
 
 ```bash
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source "${GITAWAREPROMPT}/colors.sh"
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-export PS1="\w \[\$txtcyn\]\$(__git_ps1 '[%s]')\[\$txtrst\] \$ "
-
-export MANPAGER="vim -M +MANPAGER -"
-
-export EDITOR=vim
-```
-
-and for remote systems
-
-```bash
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source "${GITAWAREPROMPT}/colors.sh"
-export PS1="\[\$txtblu\]\u@\h\[\$txtrst\] \w \$ "
 
 export MANPAGER="vim -M +MANPAGER -"
 
@@ -114,7 +125,7 @@ rustup component add clippy
 rustup component add rustfmt
 cargo install fd-find
 cargo install cargo-tree
-cargo-install cargo-outdated
+cargo install cargo-outdated
 cargo install cargo-llvm-lines
 cargo install cargo-release
 ```
