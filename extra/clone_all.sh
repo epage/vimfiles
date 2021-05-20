@@ -57,8 +57,6 @@ git remote add upstream https://github.com/crate-ci/escargot.git
 git pull --rebase upstream master
 popd
 
-git clone https://github.com/epage/cargo-release-test.git
-
 git clone https://github.com/epage/git-conventional.git
 pushd git-conventional
 git remote add upstream https://github.com/crate-ci/git-conventional.git
