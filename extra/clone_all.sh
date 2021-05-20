@@ -2,6 +2,9 @@
 
 set -eux
 
+mkdir -p ~/src/personal
+pushd ~/src/personal
+
 git clone https://github.com/epage/assert_cmd.git
 pushd assert_cmd
 git remote add upstream https://github.com/assert-rs/assert_cmd.git
