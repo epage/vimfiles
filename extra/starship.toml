@@ -1,2 +1,5 @@
 [git_status]
 disabled = true
+
+[rust]
+disabled = true

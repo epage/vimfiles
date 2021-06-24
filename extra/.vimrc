@@ -1,6 +1,6 @@
 if has("gui_running")
     " Set for hidpi machines
-    set guifont=consolas:h11
+    "set guifont=consolas:h11
 endif
 
 let g:lightline = {
@@ -39,6 +39,7 @@ Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
 Plug 'mbbill/undotree/', { 'on':  'UndotreeToggle' }
 Plug 'tpope/vim-eunuch', { 'on':  ['Delete', 'Unlink', 'Move', 'Rename', 'Chmod', 'Mkdir', ] }
 Plug 'lambdalisue/gina.vim', { 'on':  'Gina' }
+Plug 'tpope/vim-fugitive', { 'on':  'Git' }
 
 Plug 'tpope/vim-vinegar'
 Plug 'justinmk/vim-dirvish'

@@ -116,3 +116,10 @@ pushd yansi
 git remote add upstream https://github.com/SergioBenitez/yansi.git
 git pull --rebase upstream master
 popd
+
+git clone git@github.com:epage/gtr.git
+pushd gtr
+git fetch
+git checkout manual
+git checkout automated
+popd

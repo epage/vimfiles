@@ -53,3 +53,5 @@
 
 [remote "origin"]
 	prune = true
+[protocol]
+	version = 2
