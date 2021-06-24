@@ -1,9 +1,11 @@
 # Managing vim
 
+Setup [SSH keys with github](https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git).
+
 Deploy
 ```bash
 cd ~
-git clone https://github.com/epage/vimfiles.git .vim
+git clone git@github.com:epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
 cp .vim/extra/.gitconfig ~/
 mkdir ~/.config && cp .vim/extra/starship.toml ~/.config
