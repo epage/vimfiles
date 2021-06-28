@@ -42,7 +42,7 @@ el choco install winmerge -y
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install build-essential pkg-config libssl-dev cmake curl
+sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
 sudo apt install universal-ctags
 sudo apt install ripgrep
 sudo apt install tmux
@@ -54,10 +54,10 @@ rustup component add clippy
 rustup toolchain install beta
 rustup toolchain install nightly
 
-mkdir ~/bin
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-unzip FireCode.zip -d ~/.fonts && rm FireCode.zip
+unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
 fc-cache -f -v
+mkdir ~/bin
 curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
 ```
 
