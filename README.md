@@ -33,20 +33,16 @@ el choco install 7zip -y
 el choco install ripgrep -y
 el choco install steam -y
 el choco install vim -y
-el choco install ConEmu -y
 el choco install vcxsrv -y
 el choco install winmerge -y
-rem For Work
-el choco install insted -y
-el choco install p4v -y
 ```
 
 ## Linux
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get build-essential pkg-config libssl-dev cmake curl
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential pkg-config libssl-dev cmake curl
 sudo apt install universal-ctags
 sudo apt install ripgrep
 sudo apt install tmux
