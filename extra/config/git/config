@@ -8,7 +8,7 @@
 [alias]
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 
-	pullup = pull --rebase upstream master
+	pullup = "!git pull --rebase upstream $(git branch-name); git fetch origin"
 	pull-upstream = "!git pull upstream master"
 	force-pull-upstream = "!git fetch upstream; git reset --hard upstream/master"
 
@@ -38,6 +38,10 @@
 
 [diff]
 	algorithm = histogram
+	colorMoved = true ; give moved lines their own colour.
+	compactionheuristic = true
+	mnemonicprefix = true ; replace a/b with (i)ndex/(c)ommit/(w)orking tree
+	renames = copies ; detect file copies as a type of rename
 
 [log]
 	follow = true
@@ -51,7 +55,15 @@
 [merge]
 	conflictstyle = diff3
 
-[remote "origin"]
+[fetch]
 	prune = true
+	writeCommitGraph = true
+
+[pull]
+	ff = only
+
 [protocol]
 	version = 2
+
+[stack]
+	pull-remote = upstream

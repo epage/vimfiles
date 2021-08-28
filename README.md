@@ -2,15 +2,18 @@
 
 Setup [SSH keys with github](https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git).
 
+Setup [ssh-agent](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows) if needed
+
 Deploy
 ```bash
 cd ~
 git clone git@github.com:epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
-cp .vim/extra/.gitconfig ~/
-mkdir ~/.config && cp .vim/extra/starship.toml ~/.config
+mkdir -p ~/.config ~/bin
+cp -r .vim/extra/config/* ~/.config/
+cp -r .vim/extra/bin/* ~/bin
 ```
-Note: be sure to set the email address in `.gitconfig`.
+Note: be sure to set the email address in `.config/git/config`.
 
 - Initialize plugins: `:PlugInstall`
 - Update plugins: `:PlugUpdate`
@@ -57,7 +60,6 @@ rustup toolchain install nightly
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
 fc-cache -f -v
-mkdir ~/bin
 curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
 ```
 
@@ -71,6 +73,14 @@ export EDITOR=vim
 export PATH=$PATH:$HOME/bin
 
 eval "$(starship init bash)"
+
+# For WSL
+# export DISPLAY=:0
+```
+
+Add to `~/.bash_profile`
+```bash
+pip install pre-commit
 ```
 
 ## Mac
