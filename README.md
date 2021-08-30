@@ -9,6 +9,7 @@ Deploy
 cd ~
 git clone git@github.com:epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
+cp .vim/extra/.tmux.conf ~/
 mkdir -p ~/.config ~/bin
 cp -r .vim/extra/config/* ~/.config/
 cp -r .vim/extra/bin/* ~/bin
