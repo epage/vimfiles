@@ -35,6 +35,7 @@ Plug 'luochen1990/rainbow'
 
 Plug 'vim-scripts/nextval'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'gcmt/wildfire.vim'
 Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
 Plug 'mbbill/undotree/', { 'on':  'UndotreeToggle' }
 Plug 'tpope/vim-eunuch', { 'on':  ['Delete', 'Unlink', 'Move', 'Rename', 'Chmod', 'Mkdir', ] }
