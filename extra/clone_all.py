@@ -38,6 +38,10 @@ def prepare_repo(root, repo):
         if remote_url == "upstream":
             subprocess.run(["git", "-C", repo_root, "pull", remote_name], encoding="utf-8", capture_output=True, check=True)
 
+    hook = repo_root / ".pre-commit-config.yaml"
+    if hook.exists():
+        subprocess.run(["pre-commit", "install"], capture_output=True, check=True)
+
 
 if __name__ == "__main__":
     main()
