@@ -40,7 +40,7 @@ def prepare_repo(root, repo):
 
     hook = repo_root / ".pre-commit-config.yaml"
     if hook.exists():
-        subprocess.run(["pre-commit", "install"], capture_output=True, check=True)
+        subprocess.run(["pre-commit", "install", "-t", "pre-commit", "-t", "commit-msg"], capture_output=True, check=True)
 
 
 if __name__ == "__main__":
