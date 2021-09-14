@@ -44,6 +44,12 @@ el choco install winmerge -y
 ## Linux
 
 ```bash
+sudo pamac install pkgconf make cmake
+sudo pamac install ripgrep
+sudo pamac install tmux
+```
+
+```bash
 sudo apt update
 sudo apt upgrade
 sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
@@ -53,10 +59,8 @@ sudo apt install tmux
 
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
-rustup component add rustfmt
-rustup component add clippy
-rustup toolchain install beta
-rustup toolchain install nightly
+rustup component add rustfmt clippy
+rustup toolchain install beta nightly
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
@@ -77,11 +81,6 @@ eval "$(starship init bash)"
 
 # For WSL
 # export DISPLAY=:0
-```
-
-Add to `~/.bash_profile`
-```bash
-pip install pre-commit
 ```
 
 ## Mac
