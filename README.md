@@ -149,5 +149,6 @@ cargo install fd-find
 cargo install cargo-tree
 cargo install cargo-outdated
 cargo install cargo-llvm-lines
-cargo install cargo-release
+cargo install cargo-asm
+cargo install cargo-expand
 ```
