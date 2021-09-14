@@ -43,11 +43,21 @@ el choco install winmerge -y
 
 ## Linux
 
+### Manjaro
+
 ```bash
 sudo pamac install pkgconf make cmake
 sudo pamac install ripgrep
 sudo pamac install tmux
+sudo pamac install pkgfile
 ```
+
+Add to `.bashrc`
+```bash
+source /usr/share/doc/pkgfile/command-not-found.bash
+```
+
+### Mint
 
 ```bash
 sudo apt update
@@ -56,7 +66,11 @@ sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
 sudo apt install universal-ctags
 sudo apt install ripgrep
 sudo apt install tmux
+```
 
+### General
+
+```bash
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
 rustup component add rustfmt clippy
