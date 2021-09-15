@@ -22,13 +22,13 @@ def main():
 
     raw = json.loads(REPOS.read_text())
     pool = multiprocessing.dummy.Pool()
-    pool.map(raw.values(), lambda repo: prepare_repo(args.root, repo)):
+    pool.map(lambda repo: prepare_repo(args.root.expanduser(), repo), raw.values())
     pool.close()
     pool.join()
 
 
 def prepare_repo(root, repo):
-    logging.debug("Processing %s", dir.name)
+    logging.debug("Processing %s", repo["name"])
     repo_root = root / repo["name"]
     subprocess.run(["git", "clone", repo["remotes"]["origin"], repo_root], encoding="utf-8", capture_output=True, check=True)
     for remote_name, remote_url in repo["remotes"].items():
@@ -40,7 +40,7 @@ def prepare_repo(root, repo):
 
     hook = repo_root / ".pre-commit-config.yaml"
     if hook.exists():
-        subprocess.run(["pre-commit", "install", "-t", "pre-commit", "-t", "commit-msg"], capture_output=True, check=True)
+        subprocess.run(["pre-commit", "install", "-t", "pre-commit", "-t", "commit-msg"], cwd=repo_root, capture_output=True, check=True)
 
 
 if __name__ == "__main__":
