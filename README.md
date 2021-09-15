@@ -46,7 +46,7 @@ el choco install winmerge -y
 ### Manjaro
 
 ```bash
-sudo pamac install pkgconf make cmake
+sudo pamac install pkgconf make cmake gcc
 sudo pamac install ripgrep
 sudo pamac install tmux
 sudo pamac install pkgfile
