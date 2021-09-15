@@ -138,6 +138,13 @@
             "upstream": "git@github.com:crate-ci/git-conventional.git"
         }
     },
+    "git-series": {
+        "name": "git-series",
+        "remotes": {
+            "origin": "git@github.com:epage/git-series.git",
+            "upstream": "https://github.com/git-series/git-series.git"
+        }
+    },
     "git-stack": {
         "name": "git-stack",
         "remotes": {
@@ -200,6 +207,13 @@
             "upstream": "git@github.com:BurntSushi/ripgrep.git"
         }
     },
+    "taplo": {
+        "name": "taplo",
+        "remotes": {
+            "origin": "git@github.com:epage/taplo.git",
+            "upstream": "https://github.com/tamasfe/taplo.git"
+        }
+    },
     "termcolor": {
         "name": "termcolor",
         "remotes": {
@@ -225,7 +239,7 @@
         "remotes": {
             "ironyman": "https://github.com/ironyman/toml_edit.git",
             "origin": "git@github.com:epage/toml_edit.git",
-            "upstream": "https://github.com/ordian/toml_edit.git"
+            "upstream": "git@github.com:ordian/toml_edit.git"
         }
     },
     "treeline": {
