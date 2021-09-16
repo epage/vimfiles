@@ -35,8 +35,11 @@ def prepare_repo(root, repo):
         if remote_name == "origin":
             continue
         subprocess.run(["git", "-C", repo_root, "remote", "add", remote_name, remote_url], encoding="utf-8", capture_output=True, check=True)
-        if remote_url == "upstream":
-            subprocess.run(["git", "-C", repo_root, "pull", remote_name], encoding="utf-8", capture_output=True, check=True)
+        if remote_name == "upstream":
+            p = subprocess.run(["git", "-C", repo_root, "rev-parse", "--abbrev-ref", "HEAD"], encoding="utf-8", capture_output=True, check=True)
+            branch_name = p.stdout.strip()
+            subprocess.run(["git", "-C", repo_root, "fetch", remote_name], encoding="utf-8", capture_output=True, check=True)
+            subprocess.run(["git", "-C", repo_root, "reset", "--hard", f"{remote_name}/{branch_name}"], encoding="utf-8", capture_output=True, check=True)
 
     hook = repo_root / ".pre-commit-config.yaml"
     if hook.exists():
