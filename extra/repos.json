@@ -124,6 +124,13 @@
             "upstream": "git@github.com:crate-ci/escargot.git"
         }
     },
+    "eztd": {
+        "name": "eztd",
+        "remotes": {
+            "origin": "git@github.com:epage/eztd.git",
+            "upstream": "git@github.com:epage/eztd.git"
+        }
+    },
     "git-config-env": {
         "name": "git-config-env",
         "remotes": {
