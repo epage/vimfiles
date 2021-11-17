@@ -1,3 +1,11 @@
+Ubuntu-derived PPA
+- https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable
+```bash
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+```
+
+
 0.5.0 annoncements
 - https://news.ycombinator.com/item?id=27713358
 - https://www.reddit.com/r/neovim/comments/ocddrj/neovim_v050_is_officially_released_now/

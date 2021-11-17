@@ -1,33 +1,38 @@
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
-
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
+  packer_bootstrap = vim.fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
-vim.api.nvim_exec(
-  [[
+vim.cmd [[
   augroup Packer
     autocmd!
     autocmd BufWritePost init.lua PackerCompile
   augroup end
-]],
-  false
-)
+]]
 
-local use = require('packer').use
-require('packer').startup(function()
+vim.cmd [[packadd packer.nvim]]
+require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
 
   -- use 'joshdick/onedark.vim' -- Theme inspired by Atom
   use 'Th3Whit3Wolf/one-nvim'
 
   use 'itchyny/lightline.vim' -- Fancier statusline
+  use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
   use 'norcalli/nvim-colorizer.lua'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'luochen1990/rainbow'
-  use 'gelguy/wilder.nvim'
-  use {'edluffy/specs.nvim'}
+  use 'gelguy/wilder.nvim'  -- TODO
+  use {'edluffy/specs.nvim'}  -- TODO
+  use 'gcmt/wildfire.vim'  -- TODO
+  use {
+    'zegervdv/nrpattern.nvim',
+    config = function()
+      require"nrpattern".setup()
+    end,
+    requires = { 'tpope/vim-repeat' },
+  }
 
   use { 'tpope/vim-fugitive', cmd = { "Git" } }
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
@@ -37,10 +42,29 @@ require('packer').startup(function()
 
   use 'justinmk/vim-dirvish'
   use { 'mbbill/undotree', cmd = { 'UndotreeToggle' } }
+  use "tversteeg/registers.nvim"
   use { 'tpope/vim-eunuch', cmd = { 'Delete', 'Unlink', 'Move', 'Rename', 'Chmod', 'Mkdir' } }
 
   use 'ludovicchabant/vim-gutentags' -- Automatic tags management
   use { 'majutsushi/tagbar', cmd = { 'TagbarToggle' } }
+  -- TODO: crashed
+  -- use {
+  --   'nvim-telescope/telescope.nvim',
+  --   requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+  -- }
+
+  use { 'rust-lang/rust.vim', ft = {'rust'} }  -- TODO
+
+  -- TODO: Look into:
+  -- - which-key
+  -- - treesitter
+  -- - terminal.lua if I deal with ansi escape codes
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
 
 --Incremental live completion
@@ -53,7 +77,7 @@ vim.o.hidden = true
 vim.o.mouse = 'a'
 
 --Save undo history
-vim.cmd [[set undofile]]
+vim.o.undofile = true
 
 vim.o.showmatch = true
 vim.o.smartcase = true
@@ -97,16 +121,36 @@ vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
---Remap for dealing with word wrap
-vim.api.nvim_set_keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
-vim.api.nvim_set_keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
+vim.api.nvim_set_keymap('', '<F5>', ':UndotreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<F3>', ':TagbarToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
 
 --Map blankline
-vim.g.indent_blankline_char = '┊'
-vim.g.indent_blankline_filetype_exclude = { 'help', 'packer' }
-vim.g.indent_blankline_buftype_exclude = { 'terminal', 'nofile' }
-vim.g.indent_blankline_char_highlight = 'LineNr'
-vim.g.indent_blankline_show_trailing_blankline_indent = false
+require("indent_blankline").setup {
+    char = '┊',
+    filetype_exclude = { 'help', 'packer' },
+    buftype_exclude = { 'terminal', 'nofile' },
+    char_highlight = 'LineNr',
+    show_trailing_blankline_indent = false,
+}
+
+-- TODO: Crashes
+--require("bufferline").setup{}
+
+vim.g.rainbow_active = 1
+
+vim.g.rustfmt_autosave = 1
+
+vim.g.undotree_SetFocusWhenToggle = 1
+
+vim.cmd [[
+    let g:wildfire_objects = {
+        \ "*" : ["iw", "i'", 'i"', "i)", "i]", "i}", "ip"],
+        \ "c,cpp" : ["iw", "i'", 'i"', "i)", "i]", "i}", "a}"],
+        \ "python" : ["iw", "i'", 'i"', "i)", "i]", "ip"],
+        \ "html,xml" : ["iw", "is", "ip", "it", "at"],
+    \ }
+]]
 
 -- Gitsigns
 require('gitsigns').setup {
@@ -129,24 +173,3 @@ vim.api.nvim_exec(
 ]],
   false
 )
-
--- Y yank until the end of line
-vim.api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true })
-
-require('specs').setup{ 
-    show_jumps  = true,
-    min_jump = 30,
-    popup = {
-        delay_ms = 0, -- delay before popup displays
-        inc_ms = 10, -- time increments used for fade/resize effects 
-        blend = 10, -- starting blend, between 0-100 (fully transparent), see :h winblend
-        width = 10,
-        winhl = "PMenu",
-        fader = require('specs').linear_fader,
-        resizer = require('specs').shrink_resizer
-    },
-    ignore_filetypes = {},
-    ignore_buftypes = {
-        nofile = true,
-    },
-}
