@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cargo run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- release $*
+cargo run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- release "$@"

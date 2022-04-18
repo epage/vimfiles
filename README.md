@@ -146,9 +146,16 @@ rustup install nightly
 rustup component add clippy
 rustup component add rustfmt
 cargo install fd-find
+cargo install bat
+cargo install broot
+cargo install ddh
+cargo install exa
+cargo install hyperfine
+cargo install tokei
 cargo install cargo-tree
 cargo install cargo-outdated
 cargo install cargo-llvm-lines
 cargo install cargo-asm
 cargo install cargo-expand
+cargo install cargo-bloat
 ```
