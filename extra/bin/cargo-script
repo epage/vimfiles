@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+shift  # remove `script`
+cargo run --manifest-path ~/src/personal/cargo-script-mvs/Cargo.toml --bin rust-script -- "$@"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cargo run --manifest-path ~/src/personal/clap/clap_complete/Cargo.toml --example dynamic --features unstable-dynamic -- "$@"
