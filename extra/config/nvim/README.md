@@ -26,6 +26,7 @@ GUI
 - https://github.com/akiyosi/goneovim
 
 Plugins
+- Replace wildfire with https://www.reddit.com/r/neovim/comments/v9e85n/what_do_you_use_treesitter_for_other_than/ibw4cde/?context=3
 - https://github.com/gelguy/wilder.nvim
 - https://github.com/monaqa/dial.nvim
   - https://github.com/zegervdv/nrpattern.nvim
