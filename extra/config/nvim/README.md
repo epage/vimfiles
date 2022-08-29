@@ -40,3 +40,5 @@ Plugins
 - https://www.reddit.com/r/neovim/comments/jh7cbc/nvimtreesittercontext_lightweight_alternative_to/
 - https://github.com/Saecki/crates.nvim
 - https://github.com/kevinhwang91/nvim-ufo
+- https://github.com/wincent/command-t
+- https://github.com/gaoDean/autolist.nvim
