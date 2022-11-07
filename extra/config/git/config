@@ -49,6 +49,7 @@
 
 [rebase]
 	autosquash = true
+	updateRefs = true
 
 [merge]
 	conflictstyle = diff3
@@ -63,5 +64,14 @@
 [protocol]
 	version = 2
 
+[blame]
+	coloring = highlightRecent
+	markIgnoredLines = true
+
 [stack]
 	pull-remote = upstream
+[init]
+	defaultBranch = main
+[dive]
+	theme = OneHalfLight
+

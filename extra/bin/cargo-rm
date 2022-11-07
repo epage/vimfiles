@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cargo run --manifest-path ~/src/personal/cargo-edit/Cargo.toml --bin cargo-rm -- rm "$@"
+cargo run --manifest-path ~/src/personal/cargo/Cargo.toml -- "$@"
