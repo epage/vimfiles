@@ -1,4 +1,11 @@
 {
+    "anstyle": {
+        "name": "anstyle",
+        "remotes": {
+            "origin": "git@github.com:epage/anstyle.git",
+            "upstream": "git@github.com:epage/anstyle.git"
+        }
+    },
     "argfile": {
         "name": "argfile",
         "remotes": {
@@ -6,11 +13,11 @@
             "upstream": "git@github.com:rust-cli/argfile.git"
         }
     },
-    "argparse-benchmarks-rs": {
-        "name": "argparse-benchmarks-rs",
+    "argparse-rosetta-rs": {
+        "name": "argparse-rosetta-rs",
         "remotes": {
-            "origin": "git@github.com:epage/argparse-benchmarks-rs.git",
-            "upstream": "git@github.com:rust-cli/argparse-benchmarks-rs.git"
+            "origin": "git@github.com:epage/argparse-rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/argparse-rosetta-rs.git"
         }
     },
     "assert_cmd": {
@@ -25,6 +32,13 @@
         "remotes": {
             "origin": "git@github.com:epage/assert_fs.git",
             "upstream": "git@github.com:assert-rs/assert_fs.git"
+        }
+    },
+    "bat": {
+        "name": "bat",
+        "remotes": {
+            "origin": "git@github.com:epage/bat.git",
+            "upstream": "https://github.com/sharkdp/bat.git"
         }
     },
     "book": {
@@ -55,6 +69,13 @@
             "upstream": "https://github.com/iomentum/cargo-breaking.git"
         }
     },
+    "cargo-deny": {
+        "name": "cargo-deny",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-deny.git",
+            "upstream": "https://github.com/EmbarkStudios/cargo-deny.git"
+        }
+    },
     "cargo-edit": {
         "name": "cargo-edit",
         "remotes": {
@@ -71,9 +92,35 @@
     "cargo-release": {
         "name": "cargo-release",
         "remotes": {
-            "Person-93": "https://github.com/Person-93/cargo-release",
             "origin": "git@github.com:epage/cargo-release.git",
             "upstream": "git@github.com:crate-ci/cargo-release.git"
+        }
+    },
+    "cargo-script-mvs": {
+        "name": "cargo-script-mvs",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-script-mvs.git",
+            "upstream": "git@github.com:epage/cargo-script-mvs.git"
+        }
+    },
+    "cargo-semver-check": {
+        "name": "cargo-semver-check",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-semver-check.git",
+            "upstream": "git@github.com:obi1kenobi/cargo-semver-check.git"
+        }
+    },
+    "cargo-semver-checks-action": {
+        "name": "cargo-semver-checks-action",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-semver-checks-action.git",
+            "upstream": "https://github.com/obi1kenobi/cargo-semver-checks-action.git"
+        }
+    },
+    "cargo-vet": {
+        "name": "cargo-vet",
+        "remotes": {
+            "origin": "https://github.com/mozilla/cargo-vet.git"
         }
     },
     "clap": {
@@ -94,7 +141,7 @@
         "name": "clap-verbosity-flag",
         "remotes": {
             "origin": "git@github.com:epage/clap-verbosity-flag.git",
-            "upstream": "git@github.com:rust-cli/clap-verbosity-flag.git"
+            "upstream": "git@github.com:clap-rs/clap-verbosity-flag.git"
         }
     },
     "cli-wg": {
@@ -146,10 +193,31 @@
             "upstream": "git@github.com:rust-cli/concolor.git"
         }
     },
+    "config-rosetta-rs": {
+        "name": "config-rosetta-rs",
+        "remotes": {
+            "origin": "git@github.com:epage/config-rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/config-rosetta-rs.git"
+        }
+    },
+    "epage-publish-test": {
+        "name": "epage-publish-test",
+        "remotes": {
+            "origin": "git@github.com:epage/epage-publish-test.git",
+            "upstream": "git@github.com:epage/epage-publish-test.git"
+        }
+    },
     "epage.github.io": {
         "name": "epage.github.io",
         "remotes": {
             "origin": "git@github.com:epage/epage.github.io.git"
+        }
+    },
+    "ergo": {
+        "name": "ergo",
+        "remotes": {
+            "origin": "git@github.com:epage/ergo.git",
+            "upstream": "git@github.com:ergo-rs/ergo.git"
         }
     },
     "escargot": {
@@ -200,6 +268,13 @@
             "upstream": "git@github.com:crate-ci/git-conventional.git"
         }
     },
+    "git-dive": {
+        "name": "git-dive",
+        "remotes": {
+            "origin": "git@github.com:epage/git-dive.git",
+            "upstream": "git@github.com:epage/git-dive.git"
+        }
+    },
     "git-fixture": {
         "name": "git-fixture",
         "remotes": {
@@ -241,6 +316,13 @@
             "origin": "git@github.com:epage/gtr.git"
         }
     },
+    "highfive": {
+        "name": "highfive",
+        "remotes": {
+            "origin": "git@github.com:epage/highfive.git",
+            "upstream": "https://github.com/rust-lang/highfive.git"
+        }
+    },
     "imperative": {
         "name": "imperative",
         "remotes": {
@@ -268,11 +350,11 @@
             "upstream": "git@github.com:cobalt-org/liquid-rust.git"
         }
     },
-    "md-benchmarks-rs": {
-        "name": "md-benchmarks-rs",
+    "md-rosetta-rs": {
+        "name": "md-rosetta-rs",
         "remotes": {
-            "origin": "git@github.com:epage/md-benchmarks-rs.git",
-            "upstream": "git@github.com:epage/md-benchmarks-rs.git"
+            "origin": "git@github.com:epage/md-rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/md-rosetta-rs.git"
         }
     },
     "mdBook": {
@@ -287,6 +369,21 @@
         "remotes": {
             "origin": "git@github.com:epage/nom.git",
             "upstream": "https://github.com/Geal/nom.git"
+        }
+    },
+    "nom-experimental": {
+        "name": "nom-experimental",
+        "remotes": {
+            "nom": "git@github.com:Geal/nom.git",
+            "origin": "git@github.com:epage/nom-experimental.git",
+            "upstream": "git@github.com:epage/nom-experimental.git"
+        }
+    },
+    "parse-rosetta-rs": {
+        "name": "parse-rosetta-rs",
+        "remotes": {
+            "origin": "git@github.com:epage/parse-rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/parse-rosetta-rs.git"
         }
     },
     "predicates-rs": {
@@ -337,6 +434,19 @@
             "upstream": "git@github.com:rust-cli/roff-rs.git"
         }
     },
+    "rosetta-rs": {
+        "name": "rosetta-rs",
+        "remotes": {
+            "origin": "git@github.com:epage/rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/team.git"
+        }
+    },
+    "rust": {
+        "name": "rust",
+        "remotes": {
+            "origin": "git@github.com:rust-lang/rust.git"
+        }
+    },
     "rust-rfcs": {
         "name": "rust-rfcs",
         "remotes": {
@@ -351,6 +461,13 @@
             "origin": "https://github.com/rust-lang/rust-semverver.git"
         }
     },
+    "rust-team": {
+        "name": "rust-team",
+        "remotes": {
+            "origin": "git@github.com:epage/team.git",
+            "upstream": "https://github.com/rust-lang/team.git"
+        }
+    },
     "shadow-rs": {
         "name": "shadow-rs",
         "remotes": {
@@ -358,11 +475,11 @@
             "upstream": "https://github.com/baoyachi/shadow-rs.git"
         }
     },
-    "string-benchmarks-rs": {
-        "name": "string-benchmarks-rs",
+    "string-rosetta-rs": {
+        "name": "string-rosetta-rs",
         "remotes": {
-            "origin": "git@github.com:epage/string-benchmarks-rs.git",
-            "upstream": "git@github.com:epage/string-benchmarks-rs.git"
+            "origin": "git@github.com:epage/string-rosetta-rs.git",
+            "upstream": "git@github.com:rosetta-rs/string-rosetta-rs.git"
         }
     },
     "taplo": {
@@ -379,11 +496,32 @@
             "upstream": "https://github.com/BurntSushi/termcolor.git"
         }
     },
+    "termgraph": {
+        "name": "termgraph",
+        "remotes": {
+            "origin": "https://github.com/Lol3rrr/termgraph.git"
+        }
+    },
     "termtree": {
         "name": "termtree",
         "remotes": {
             "origin": "git@github.com:epage/termtree.git",
             "upstream": "git@github.com:rust-cli/termtree.git"
+        }
+    },
+    "this-week-in-rust": {
+        "name": "this-week-in-rust",
+        "remotes": {
+            "origin": "git@github.com:epage/this-week-in-rust.git",
+            "upstream": "git@github.com:rust-lang/this-week-in-rust.git"
+        }
+    },
+    "toml": {
+        "name": "toml",
+        "remotes": {
+            "origin": "git@github.com:epage/toml_edit.git",
+            "toml-rs": "https://github.com/alexcrichton/toml-rs.git",
+            "upstream": "git@github.com:toml-rs/toml.git"
         }
     },
     "toml-rs": {
@@ -404,7 +542,7 @@
         "name": "toml-test-rs",
         "remotes": {
             "origin": "git@github.com:epage/toml-test-rs.git",
-            "upstream": "git@github.com:epage/toml-test-rs.git"
+            "upstream": "git@github.com:toml-rs/toml-test-rs.git"
         }
     },
     "toml_edit": {
@@ -432,7 +570,7 @@
         "name": "typos",
         "remotes": {
             "origin": "git@github.com:epage/typos.git",
-            "upstream": "git@github.com:crate-ci/typos.git"
+            "upstream": "git@github.com:crate-ci/typos.git",
         }
     },
     "unicode-xid": {
