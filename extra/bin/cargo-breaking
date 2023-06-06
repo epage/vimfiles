@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cargo +nightly run --manifest-path ~/src/personal/cargo-breaking/Cargo.toml -- breaking "$@"

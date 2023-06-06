@@ -95,6 +95,8 @@ eval "$(starship init bash)"
 
 # For WSL
 # export DISPLAY=:0
+# /usr/bin/keychain -q --nogui $HOME/.ssh/id_github
+# source $HOME/.keychain/$HOSTNAME-sh
 ```
 
 ## Mac
