@@ -1,14 +1,24 @@
 {
+    "_rust": {
+        "name": "_rust",
+        "remotes": {
+            "origin": "git@github.com:epage/_rust.git",
+            "upstream": "git@github.com:epage/_rust.git"
+        }
+    },
     "anstyle": {
         "name": "anstyle",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/anstyle.git",
-            "upstream": "git@github.com:epage/anstyle.git"
+            "upstream": "git@github.com:rust-cli/anstyle.git",
+            "vte": "git@github.com:alacritty/vte.git"
         }
     },
     "argfile": {
         "name": "argfile",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/argfile.git",
             "upstream": "git@github.com:rust-cli/argfile.git"
         }
@@ -23,6 +33,7 @@
     "assert_cmd": {
         "name": "assert_cmd",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/assert_cmd.git",
             "upstream": "git@github.com:assert-rs/assert_cmd.git"
         }
@@ -30,6 +41,7 @@
     "assert_fs": {
         "name": "assert_fs",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/assert_fs.git",
             "upstream": "git@github.com:assert-rs/assert_fs.git"
         }
@@ -92,6 +104,7 @@
     "cargo-release": {
         "name": "cargo-release",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-release.git",
             "upstream": "git@github.com:crate-ci/cargo-release.git"
         }
@@ -100,6 +113,7 @@
         "name": "cargo-script-mvs",
         "remotes": {
             "origin": "git@github.com:epage/cargo-script-mvs.git",
+            "rust-script": "git@github.com:fornwall/rust-script.git",
             "upstream": "git@github.com:epage/cargo-script-mvs.git"
         }
     },
@@ -123,9 +137,24 @@
             "origin": "https://github.com/mozilla/cargo-vet.git"
         }
     },
+    "chumsky": {
+        "name": "chumsky",
+        "remotes": {
+            "origin": "git@github.com:epage/chumsky.git",
+            "upstream": "git@github.com:zesterer/chumsky.git"
+        }
+    },
+    "circular": {
+        "name": "circular",
+        "remotes": {
+            "origin": "git@github.com:epage/circular.git",
+            "upstream": "git@github.com:sozu-proxy/circular.git"
+        }
+    },
     "clap": {
         "name": "clap",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/clap.git",
             "upstream": "git@github.com:clap-rs/clap.git"
         }
@@ -133,6 +162,7 @@
     "clap-cargo": {
         "name": "clap-cargo",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/clap-cargo.git",
             "upstream": "git@github.com:crate-ci/clap-cargo.git"
         }
@@ -140,6 +170,7 @@
     "clap-verbosity-flag": {
         "name": "clap-verbosity-flag",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/clap-verbosity-flag.git",
             "upstream": "git@github.com:clap-rs/clap-verbosity-flag.git"
         }
@@ -168,6 +199,7 @@
     "codegenrs": {
         "name": "codegenrs",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/codegenrs.git",
             "upstream": "git@github.com:crate-ci/codegenrs.git"
         }
@@ -182,6 +214,7 @@
     "committed": {
         "name": "committed",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/committed.git",
             "upstream": "git@github.com:crate-ci/committed.git"
         }
@@ -189,6 +222,7 @@
     "concolor": {
         "name": "concolor",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/concolor.git",
             "upstream": "git@github.com:rust-cli/concolor.git"
         }
@@ -198,6 +232,21 @@
         "remotes": {
             "origin": "git@github.com:epage/config-rosetta-rs.git",
             "upstream": "git@github.com:rosetta-rs/config-rosetta-rs.git"
+        }
+    },
+    "crates.io": {
+        "name": "crates.io",
+        "remotes": {
+            "origin": "git@github.com:epage/crates.io.git",
+            "upstream": "git@github.com:rust-lang/crates.io.git"
+        }
+    },
+    "env_logger": {
+        "name": "env_logger",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/env_logger.git",
+            "upstream": "git@github.com:rust-cli/env_logger.git"
         }
     },
     "epage-publish-test": {
@@ -223,6 +272,7 @@
     "escargot": {
         "name": "escargot",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/escargot.git",
             "upstream": "git@github.com:crate-ci/escargot.git"
         }
@@ -243,6 +293,7 @@
     "git-branch-stash": {
         "name": "git-branch-stash",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-branch-stash.git",
             "upstream": "git@github.com:gitext-rs/git-branch-stash.git"
         }
@@ -257,6 +308,7 @@
     "git-config-env": {
         "name": "git-config-env",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-config-env.git",
             "upstream": "git@github.com:gitext-rs/git-config-env.git"
         }
@@ -264,6 +316,7 @@
     "git-conventional": {
         "name": "git-conventional",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-conventional.git",
             "upstream": "git@github.com:crate-ci/git-conventional.git"
         }
@@ -271,13 +324,15 @@
     "git-dive": {
         "name": "git-dive",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-dive.git",
-            "upstream": "git@github.com:epage/git-dive.git"
+            "upstream": "git@github.com:gitext-rs/git-dive.git"
         }
     },
     "git-fixture": {
         "name": "git-fixture",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-fixture.git",
             "upstream": "git@github.com:gitext-rs/git-fixture.git"
         }
@@ -292,6 +347,7 @@
     "git-stack": {
         "name": "git-stack",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git-stack.git",
             "upstream": "git@github.com:gitext-rs/git-stack.git"
         }
@@ -299,6 +355,7 @@
     "git2-ext": {
         "name": "git2-ext",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git2-ext.git",
             "upstream": "git@github.com:gitext-rs/git2-ext.git"
         }
@@ -308,6 +365,13 @@
         "remotes": {
             "muff1nman": "https://github.com/muff1nman/github-issues-import",
             "origin": "https://github.com/IQAndreas/github-issues-import.git"
+        }
+    },
+    "gitoxide": {
+        "name": "gitoxide",
+        "remotes": {
+            "origin": "git@github.com:epage/gitoxide.git",
+            "upstream": "git@github.com:Byron/gitoxide.git"
         }
     },
     "gtr": {
@@ -323,9 +387,18 @@
             "upstream": "https://github.com/rust-lang/highfive.git"
         }
     },
+    "human-panic": {
+        "name": "human-panic",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/human-panic.git",
+            "upstream": "git@github.com:rust-cli/human-panic.git"
+        }
+    },
     "imperative": {
         "name": "imperative",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/imperative.git",
             "upstream": "git@github.com:crate-ci/imperative.git"
         }
@@ -333,8 +406,15 @@
     "kstring": {
         "name": "kstring",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/kstring.git",
             "upstream": "git@github.com:cobalt-org/kstring.git"
+        }
+    },
+    "libtest-mimic": {
+        "name": "libtest-mimic",
+        "remotes": {
+            "origin": "git@github.com:LukasKalbertodt/libtest-mimic.git"
         }
     },
     "linux": {
@@ -346,6 +426,7 @@
     "liquid-rust": {
         "name": "liquid-rust",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/liquid-rust.git",
             "upstream": "git@github.com:cobalt-org/liquid-rust.git"
         }
@@ -407,6 +488,14 @@
             "upstream": "git@github.com:AndWass/pushgen.git"
         }
     },
+    "pytest-rs": {
+        "name": "pytest-rs",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/pytest-rs.git",
+            "upstream": "git@github.com:epage/pytest-rs.git"
+        }
+    },
     "recaphub": {
         "name": "recaphub",
         "remotes": {
@@ -444,7 +533,22 @@
     "rust": {
         "name": "rust",
         "remotes": {
-            "origin": "git@github.com:rust-lang/rust.git"
+            "origin": "git@github.com:epage/rust.git",
+            "upstream": "git@github.com:rust-lang/rust.git"
+        }
+    },
+    "rust-clippy": {
+        "name": "rust-clippy",
+        "remotes": {
+            "origin": "https://github.com/epage/rust-clippy.git",
+            "upstream": "git@github.com:rust-lang/rust-clippy.git"
+        }
+    },
+    "rust-crates-index": {
+        "name": "rust-crates-index",
+        "remotes": {
+            "origin": "git@github.com:epage/rust-crates-index.git",
+            "upstream": "git@github.com:frewsxcv/rust-crates-index.git"
         }
     },
     "rust-rfcs": {
@@ -453,6 +557,12 @@
             "manishearth": "https://github.com/Manishearth/rfcs.git",
             "origin": "git@github.com:epage/rfcs.git",
             "upstream": "https://github.com/rust-lang/rfcs"
+        }
+    },
+    "rust-script": {
+        "name": "rust-script",
+        "remotes": {
+            "origin": "git@github.com:fornwall/rust-script.git"
         }
     },
     "rust-semverver": {
@@ -520,7 +630,6 @@
         "name": "toml",
         "remotes": {
             "origin": "git@github.com:epage/toml_edit.git",
-            "toml-rs": "https://github.com/alexcrichton/toml-rs.git",
             "upstream": "git@github.com:toml-rs/toml.git"
         }
     },
@@ -543,6 +652,12 @@
         "remotes": {
             "origin": "git@github.com:epage/toml-test-rs.git",
             "upstream": "git@github.com:toml-rs/toml-test-rs.git"
+        }
+    },
+    "toml.io": {
+        "name": "toml.io",
+        "remotes": {
+            "origin": "git@github.com:epage/toml.io.git"
         }
     },
     "toml_edit": {
@@ -570,7 +685,7 @@
         "name": "typos",
         "remotes": {
             "origin": "git@github.com:epage/typos.git",
-            "upstream": "git@github.com:crate-ci/typos.git",
+            "upstream": "git@github.com:crate-ci/typos.git"
         }
     },
     "unicode-xid": {
@@ -578,6 +693,27 @@
         "remotes": {
             "origin": "git@github.com:epage/unicode-xid.git",
             "upstream": "git@github.com:unicode-rs/unicode-xid.git"
+        }
+    },
+    "vte": {
+        "name": "vte",
+        "remotes": {
+            "origin": "git@github.com:epage/vte.git",
+            "upstream": "git@github.com:alacritty/vte.git"
+        }
+    },
+    "wezterm": {
+        "name": "wezterm",
+        "remotes": {
+            "origin": "git@github.com:wez/wezterm.git"
+        }
+    },
+    "winnow": {
+        "name": "winnow",
+        "remotes": {
+            "nom": "git@github.com:Geal/nom.git",
+            "origin": "git@github.com:epage/winnow.git",
+            "upstream": "git@github.com:winnow-rs/winnow.git"
         }
     },
     "yansi": {
