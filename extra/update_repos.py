@@ -57,7 +57,10 @@ def list_remotes(dir):
 
 
 def fetch_url(dir, remote):
-    p = subprocess.run(["git", "-C", dir, "remote", "show", remote], encoding="utf-8", capture_output=True, check=True)
+    try:
+        p = subprocess.run(["git", "-C", dir, "remote", "show", remote], encoding="utf-8", capture_output=True, check=True)
+    except subprocess.CalledProcessError:
+        return None
     for line in p.stdout.splitlines():
         try:
             key, val = line.split(":", 1)

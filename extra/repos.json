@@ -60,6 +60,13 @@
             "upstream": "git@github.com:rust-cli/book.git"
         }
     },
+    "bpaf": {
+        "name": "bpaf",
+        "remotes": {
+            "origin": "git@github.com:epage/bpaf.git",
+            "upstream": "git@github.com:pacak/bpaf.git"
+        }
+    },
     "cargo": {
         "name": "cargo",
         "remotes": {
@@ -135,6 +142,13 @@
         "name": "cargo-vet",
         "remotes": {
             "origin": "https://github.com/mozilla/cargo-vet.git"
+        }
+    },
+    "chezmoi_modify_manager": {
+        "name": "chezmoi_modify_manager",
+        "remotes": {
+            "origin": "git@github.com:epage/chezmoi_modify_manager.git",
+            "upstream": "git@github.com:VorpalBlade/chezmoi_modify_manager.git"
         }
     },
     "chumsky": {
@@ -219,6 +233,14 @@
             "upstream": "git@github.com:crate-ci/committed.git"
         }
     },
+    "completest": {
+        "name": "completest",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/completest.git",
+            "upstream": "git@github.com:assert-rs/completest.git"
+        }
+    },
     "concolor": {
         "name": "concolor",
         "remotes": {
@@ -259,7 +281,8 @@
     "epage.github.io": {
         "name": "epage.github.io",
         "remotes": {
-            "origin": "git@github.com:epage/epage.github.io.git"
+            "origin": "git@github.com:epage/epage.github.io.git",
+            "upstream": "git@github.com:epage/epage.github.io.git"
         }
     },
     "ergo": {
@@ -288,6 +311,13 @@
         "name": "gecko-dev",
         "remotes": {
             "origin": "https://github.com/mozilla/gecko-dev.git"
+        }
+    },
+    "gh-install": {
+        "name": "gh-install",
+        "remotes": {
+            "origin": "git@github.com:epage/gh-install.git",
+            "upstream": "git@github.com:crate-ci/gh-install.git"
         }
     },
     "git-branch-stash": {
@@ -371,13 +401,20 @@
         "name": "gitoxide",
         "remotes": {
             "origin": "git@github.com:epage/gitoxide.git",
-            "upstream": "git@github.com:Byron/gitoxide.git"
+            "upstream": "https://github.com/Byron/gitoxide.git"
         }
     },
     "gtr": {
         "name": "gtr",
         "remotes": {
             "origin": "git@github.com:epage/gtr.git"
+        }
+    },
+    "hcl-rs": {
+        "name": "hcl-rs",
+        "remotes": {
+            "origin": "git@github.com:epage/hcl-rs.git",
+            "upstream": "git@github.com:martinohmann/hcl-rs.git"
         }
     },
     "highfive": {
@@ -452,12 +489,11 @@
             "upstream": "https://github.com/Geal/nom.git"
         }
     },
-    "nom-experimental": {
-        "name": "nom-experimental",
+    "organize": {
+        "name": "organize",
         "remotes": {
-            "nom": "git@github.com:Geal/nom.git",
-            "origin": "git@github.com:epage/nom-experimental.git",
-            "upstream": "git@github.com:epage/nom-experimental.git"
+            "origin": "git@github.com:epage/organize.git",
+            "upstream": "git@github.com:organize-rs/organize.git"
         }
     },
     "parse-rosetta-rs": {
@@ -465,6 +501,13 @@
         "remotes": {
             "origin": "git@github.com:epage/parse-rosetta-rs.git",
             "upstream": "git@github.com:rosetta-rs/parse-rosetta-rs.git"
+        }
+    },
+    "peps": {
+        "name": "peps",
+        "remotes": {
+            "origin": "git@github.com:epage/peps.git",
+            "upstream": "https://github.com/python/peps.git"
         }
     },
     "predicates-rs": {
@@ -477,6 +520,7 @@
     "proc-exit": {
         "name": "proc-exit",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/proc-exit.git",
             "upstream": "git@github.com:rust-cli/proc-exit.git"
         }
@@ -519,6 +563,7 @@
     "roff-rs": {
         "name": "roff-rs",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/roff-rs.git",
             "upstream": "git@github.com:rust-cli/roff-rs.git"
         }
@@ -565,12 +610,6 @@
             "origin": "git@github.com:fornwall/rust-script.git"
         }
     },
-    "rust-semverver": {
-        "name": "rust-semverver",
-        "remotes": {
-            "origin": "https://github.com/rust-lang/rust-semverver.git"
-        }
-    },
     "rust-team": {
         "name": "rust-team",
         "remotes": {
@@ -615,6 +654,7 @@
     "termtree": {
         "name": "termtree",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/termtree.git",
             "upstream": "git@github.com:rust-cli/termtree.git"
         }
@@ -631,13 +671,6 @@
         "remotes": {
             "origin": "git@github.com:epage/toml_edit.git",
             "upstream": "git@github.com:toml-rs/toml.git"
-        }
-    },
-    "toml-rs": {
-        "name": "toml-rs",
-        "remotes": {
-            "origin": "https://github.com/alexcrichton/toml-rs.git",
-            "upstream": "https://github.com/alexcrichton/toml-rs.git"
         }
     },
     "toml-test": {
@@ -658,20 +691,6 @@
         "name": "toml.io",
         "remotes": {
             "origin": "git@github.com:epage/toml.io.git"
-        }
-    },
-    "toml_edit": {
-        "name": "toml_edit",
-        "remotes": {
-            "origin": "git@github.com:epage/toml_edit.git",
-            "upstream": "git@github.com:ordian/toml_edit.git"
-        }
-    },
-    "treeline": {
-        "name": "treeline",
-        "remotes": {
-            "origin": "git@github.com:epage/treeline.git",
-            "upstream": "https://github.com/softprops/treeline.git"
         }
     },
     "trycmd": {
@@ -711,6 +730,7 @@
     "winnow": {
         "name": "winnow",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "nom": "git@github.com:Geal/nom.git",
             "origin": "git@github.com:epage/winnow.git",
             "upstream": "git@github.com:winnow-rs/winnow.git"
