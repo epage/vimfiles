@@ -513,6 +513,7 @@
     "predicates-rs": {
         "name": "predicates-rs",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/predicates-rs.git",
             "upstream": "git@github.com:assert-rs/predicates-rs.git"
         }
@@ -669,6 +670,7 @@
     "toml": {
         "name": "toml",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/toml_edit.git",
             "upstream": "git@github.com:toml-rs/toml.git"
         }
@@ -683,6 +685,7 @@
     "toml-test-rs": {
         "name": "toml-test-rs",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/toml-test-rs.git",
             "upstream": "git@github.com:toml-rs/toml-test-rs.git"
         }
@@ -696,6 +699,7 @@
     "trycmd": {
         "name": "trycmd",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/trycmd.git",
             "upstream": "git@github.com:assert-rs/trycmd.git"
         }
@@ -703,6 +707,7 @@
     "typos": {
         "name": "typos",
         "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/typos.git",
             "upstream": "git@github.com:crate-ci/typos.git"
         }
