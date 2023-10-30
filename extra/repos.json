@@ -241,14 +241,6 @@
             "upstream": "git@github.com:assert-rs/completest.git"
         }
     },
-    "concolor": {
-        "name": "concolor",
-        "remotes": {
-            "_rust": "git@github.com:epage/_rust.git",
-            "origin": "git@github.com:epage/concolor.git",
-            "upstream": "git@github.com:rust-cli/concolor.git"
-        }
-    },
     "config-rosetta-rs": {
         "name": "config-rosetta-rs",
         "remotes": {
