@@ -4,6 +4,7 @@ keybinds clear-defaults=true {
         bind "Ctrl b" { SwitchToMode "Pane"; }
     }
     locked {
+        bind "Ctrl b" { SwitchToMode "Pane"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -61,14 +62,15 @@ keybinds clear-defaults=true {
     }
     scroll {
         bind "Space" "Enter" "Esc" { SwitchToMode "Normal"; }
+        bind "Ctrl b" { SwitchToMode "Pane"; }
         bind "Ctrl s" { SwitchToMode "Normal"; }
         bind "e" { EditScrollback; SwitchToMode "Normal"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
-        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
-        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "PageDown" "Right" "l" { PageScrollDown; }
+        bind "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
         // uncomment this and adjust key if using copy_on_select=false
@@ -76,12 +78,13 @@ keybinds clear-defaults=true {
     }
     search {
         bind "Space" "Enter" "Esc" { SwitchToMode "Normal"; }
+        bind "Ctrl b" { SwitchToMode "Pane"; }
         bind "Ctrl s" { SwitchToMode "Normal"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
-        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
-        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+        bind "PageDown" "Right" "l" { PageScrollDown; }
+        bind "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
         bind "n" { Search "down"; }

@@ -121,7 +121,7 @@ return {
     end,
   },
   -- { "mrjones2014/nvim-ts-rainbow" },
-  { url = "https://gitlab.com/HiPhish/nvim-ts-rainbow2.git" },
+  { url = "https://gitlab.com/HiPhish/rainbow-delimiters.nvim.git" },
   { "m-demare/hlargs.nvim" },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -141,11 +141,6 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      rainbow = {
-        enable = true,
-      },
-    },
   },
 
   {
