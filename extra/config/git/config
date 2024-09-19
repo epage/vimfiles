@@ -5,6 +5,9 @@
 	editor = vim
 	autocrlf = false
 
+[advice]
+	detachedHead = false
+
 [alias]
 	branch-name = "rev-parse --abbrev-ref HEAD"
 
@@ -31,7 +34,7 @@
 	day = !"git log --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 	week = !"git log --reverse master --since='last friday' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 
-	gh-switch = "!git remote add \"$1\" \"git@github.com:$1/$(basename $PWD).git\"; git fetch \"$1\" \"$2\"; git checkout $1/$2 #"
+	gh-switch = "!git remote add \"$1\" \"git@github.com:$1/$(basename $PWD).git\"; git fetch \"$1\" \"$2\"; git checkout $1/$2; git checkout -b $2"
 	next = stack next
 	prev = stack previous
 	reword = stack reword

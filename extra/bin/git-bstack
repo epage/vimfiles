@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+~/src/personal/git-stack/target/debug/git-stack "$@"
