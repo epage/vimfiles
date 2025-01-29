@@ -160,4 +160,5 @@ cargo install cargo-llvm-lines
 cargo install cargo-asm
 cargo install cargo-expand
 cargo install cargo-bloat
+cargo install --git https://github.com/rust-lang/measureme crox flamegraph summarize
 ```

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-cargo run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- "$@"
+unset CARGO
+cargo +nightly run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- "$@" -Zworkspace-publish

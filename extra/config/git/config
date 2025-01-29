@@ -78,6 +78,7 @@
 
 [stack]
 	pull-remote = upstream
+	protect-commit-age=30days
 [init]
 	defaultBranch = main
 [dive]

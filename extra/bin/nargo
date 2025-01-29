@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-CARGO_RESOLVER_INCOMPATIBLE_RUST_VERSIONS=fallback RUST_BACKTRACE=1 cargo run --manifest-path ~/src/personal/cargo/Cargo.toml -- -Zscript -Zmsrv-policy "$@"
+CARGO_LOG= CARGO_COMPLETE= cargo build --manifest-path ~/src/personal/cargo/Cargo.toml
+RUST_BACKTRACE=1 ~/src/personal/cargo/target/debug/cargo -Zscript -Zmsrv-policy "$@"
