@@ -63,9 +63,7 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 sudo apt update
 sudo apt upgrade
 sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
-sudo apt install universal-ctags
 sudo apt install ripgrep
-sudo apt install tmux
 ```
 
 ### General
@@ -102,25 +100,18 @@ eval "$(starship init bash)"
 ## Mac
 
 ```bash
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew cask install iterm2
+brew install bash
 brew install git bash-completion
 brew install macvim
+brew install neovim
 brew install ripgrep
 brew install fd
 brew install exa
-brew install ctags
-brew install tmux
-brew install flake8
-brew install shfmt
+brew install zellij
 brew install python@3.8
 brew cask install diffmerge firefox iterm2 dropbox sweet-home3d
-
-mkdir ~/.bash
-cd .bash
-git clone git://github.com/jimeh/git-aware-prompt.git
 
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
