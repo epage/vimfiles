@@ -1,0 +1,22 @@
+[unstable]
+rustc-unicode = true
+script = true
+build-analysis = true
+build-dir-new-layout = true
+
+[build]
+build-dir = "{cargo-cache-home}/build/{workspace-path-hash}"
+
+[build.analysis]
+enabled = true
+
+[registry]
+global-credential-providers = ["cargo:token", "cargo:macos-keychain", "cargo:wincred"]
+
+[profile.dev]
+#debug = "line-tables-only"
+#strip = "debuginfo"
+split-debuginfo = "unpacked"
+
+[resolver]
+incompatible-rust-versions = "fallback"
