@@ -5,9 +5,6 @@
 	editor = vim
 	autocrlf = false
 
-[advice]
-	detachedHead = false
-
 [alias]
 	branch-name = "rev-parse --abbrev-ref HEAD"
 
@@ -35,6 +32,7 @@
 	week = !"git log --reverse master --since='last friday' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 
 	gh-switch = "!git remote add \"$1\" \"git@github.com:$1/$(basename $PWD).git\"; git fetch \"$1\" \"$2\"; git checkout $1/$2; git checkout -b $2"
+	up-switch = "git fetch upstream \"$1\"; git checkout upstream/$1; git checkout -b $1"
 	next = stack next
 	prev = stack previous
 	reword = stack reword
@@ -42,9 +40,21 @@
 	sync = stack sync
 	run = stack run
 
+[advice]
+	detachedHead = false
+
+[column]
+        ui = auto
+
+[branch]
+        sort = -committerdate
+
+[tag]
+        sort = version:refname
+
 [diff]
 	algorithm = histogram
-	colorMoved = true ; give moved lines their own colour.
+	colorMoved = plain ; give moved lines their own colour.
 	compactionheuristic = true
 	mnemonicprefix = true ; replace a/b with (i)ndex/(c)ommit/(w)orking tree
 	renames = copies ; detect file copies as a type of rename
@@ -54,23 +64,28 @@
 
 [push]
 	default = current
+        autoSetupRemote = true
 
 [rebase]
 	autosquash = true
+	autoStash = true
 	updateRefs = true
 
 [merge]
 	conflictstyle = diff3
 
+[protocol]
+	version = 2
+
 [fetch]
 	prune = true
+        pruneTags = true
+        all = true
 	writeCommitGraph = true
 
 [pull]
+	rebase = true
 	ff = only
-
-[protocol]
-	version = 2
 
 [blame]
 	coloring = highlightRecent
