@@ -83,13 +83,6 @@
             "upstream": "git@github.com:rust-cli/book.git"
         }
     },
-    "bpaf": {
-        "name": "bpaf",
-        "remotes": {
-            "origin": "git@github.com:epage/bpaf.git",
-            "upstream": "git@github.com:pacak/bpaf.git"
-        }
-    },
     "calendar": {
         "name": "calendar",
         "remotes": {
@@ -118,6 +111,14 @@
             "upstream": "https://github.com/iomentum/cargo-breaking.git"
         }
     },
+    "cargo-cargofmt": {
+        "name": "cargo-cargofmt",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/cargo-cargofmt.git",
+            "upstream": "git@github.com:crate-ci/cargo-cargofmt.git"
+        }
+    },
     "cargo-deny": {
         "name": "cargo-deny",
         "remotes": {
@@ -132,24 +133,20 @@
             "upstream": "git@github.com:killercup/cargo-edit.git"
         }
     },
-    "cargo-hack": {
-        "name": "cargo-hack",
+    "cargo-fixit": {
+        "name": "cargo-fixit",
         "remotes": {
-            "origin": "git@github.com:epage/cargo-hack.git",
-            "upstream": "https://github.com/taiki-e/cargo-hack.git"
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/cargo-fixit.git",
+            "upstream": "git@github.com:crate-ci/cargo-fixit.git"
         }
     },
-    "cargo-msrv": {
-        "name": "cargo-msrv",
+    "cargo-plumbing": {
+        "name": "cargo-plumbing",
         "remotes": {
-            "origin": "https://github.com/foresterre/cargo-msrv.git"
-        }
-    },
-    "cargo-override": {
-        "name": "cargo-override",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-override.git",
-            "upstream": "https://github.com/eopb/cargo-override.git"
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/cargo-plumbing.git",
+            "upstream": "git@github.com:crate-ci/cargo-plumbing.git"
         }
     },
     "cargo-release": {
@@ -158,14 +155,6 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-release.git",
             "upstream": "git@github.com:crate-ci/cargo-release.git"
-        }
-    },
-    "cargo-script-mvs": {
-        "name": "cargo-script-mvs",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-script-mvs.git",
-            "rust-script": "git@github.com:fornwall/rust-script.git",
-            "upstream": "git@github.com:epage/cargo-script-mvs.git"
         }
     },
     "cargo-semver-check": {
@@ -180,34 +169,6 @@
         "remotes": {
             "origin": "git@github.com:epage/cargo-semver-checks-action.git",
             "upstream": "https://github.com/obi1kenobi/cargo-semver-checks-action.git"
-        }
-    },
-    "cargo-vet": {
-        "name": "cargo-vet",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-vet.git",
-            "upstream": "https://github.com/mozilla/cargo-vet.git"
-        }
-    },
-    "chezmoi_modify_manager": {
-        "name": "chezmoi_modify_manager",
-        "remotes": {
-            "origin": "git@github.com:epage/chezmoi_modify_manager.git",
-            "upstream": "git@github.com:VorpalBlade/chezmoi_modify_manager.git"
-        }
-    },
-    "chumsky": {
-        "name": "chumsky",
-        "remotes": {
-            "origin": "git@github.com:epage/chumsky.git",
-            "upstream": "git@github.com:zesterer/chumsky.git"
-        }
-    },
-    "circular": {
-        "name": "circular",
-        "remotes": {
-            "origin": "git@github.com:epage/circular.git",
-            "upstream": "git@github.com:sozu-proxy/circular.git"
         }
     },
     "clap": {
@@ -499,13 +460,6 @@
             "upstream": "git@github.com:epage/gtr-cards.git"
         }
     },
-    "hcl-rs": {
-        "name": "hcl-rs",
-        "remotes": {
-            "origin": "git@github.com:epage/hcl-rs.git",
-            "upstream": "git@github.com:martinohmann/hcl-rs.git"
-        }
-    },
     "highfive": {
         "name": "highfive",
         "remotes": {
@@ -544,18 +498,13 @@
             "upstream": "git@github.com:cobalt-org/kstring.git"
         }
     },
-    "libtest-mimic": {
-        "name": "libtest-mimic",
+    "libtest2": {
+        "name": "libtest2",
         "remotes": {
-            "origin": "git@github.com:epage/libtest-mimic.git",
-            "upstream": "https://github.com/LukasKalbertodt/libtest-mimic.git"
-        }
-    },
-    "libtest-next": {
-        "name": "libtest-next",
-        "remotes": {
-            "origin": "git@github.com:epage/libtest-next.git",
-            "upstream": "git@github.com:rust-lang/libtest-next.git"
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/libtest2.git",
+            "rustest": "https://github.com/mgautierfr/rustest.git",
+            "upstream": "git@github.com:crate-ci/libtest2.git"
         }
     },
     "linux": {
@@ -606,6 +555,13 @@
             "upstream": "https://github.com/Geal/nom.git"
         }
     },
+    "once_cell_polyfill": {
+        "name": "once_cell_polyfill",
+        "remotes": {
+            "origin": "git@github.com:epage/once_cell_polyfill.git",
+            "upstream": "git@github.com:polyfill-rs/once_cell_polyfill.git"
+        }
+    },
     "organize": {
         "name": "organize",
         "remotes": {
@@ -641,27 +597,19 @@
             "upstream": "git@github.com:assert-rs/predicates-rs.git"
         }
     },
+    "prek": {
+        "name": "prek",
+        "remotes": {
+            "origin": "git@github.com:epage/prek.git",
+            "upstream": "https://github.com/j178/prek.git"
+        }
+    },
     "proc-exit": {
         "name": "proc-exit",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/proc-exit.git",
             "upstream": "git@github.com:rust-cli/proc-exit.git"
-        }
-    },
-    "pushgen": {
-        "name": "pushgen",
-        "remotes": {
-            "origin": "git@github.com:epage/pushgen.git",
-            "upstream": "git@github.com:AndWass/pushgen.git"
-        }
-    },
-    "pytest-rs": {
-        "name": "pytest-rs",
-        "remotes": {
-            "_rust": "git@github.com:epage/_rust.git",
-            "origin": "git@github.com:epage/pytest-rs.git",
-            "upstream": "git@github.com:epage/pytest-rs.git"
         }
     },
     "recaphub": {
@@ -678,25 +626,11 @@
             "upstream": "git@github.com:rust-cli/rexpect.git"
         }
     },
-    "rinja": {
-        "name": "rinja",
-        "remotes": {
-            "origin": "git@github.com:epage/rinja.git",
-            "upstream": "https://github.com/rinja-rs/rinja.git"
-        }
-    },
     "ripgrep": {
         "name": "ripgrep",
         "remotes": {
             "origin": "git@github.com:epage/ripgrep.git",
             "upstream": "git@github.com:BurntSushi/ripgrep.git"
-        }
-    },
-    "rls": {
-        "name": "rls",
-        "remotes": {
-            "origin": "git@github.com:epage/rls.git",
-            "upstream": "https://github.com/rust-lang/rls.git"
         }
     },
     "roff-rs": {
@@ -721,6 +655,13 @@
             "upstream": "git@github.com:rust-lang/rust.git"
         }
     },
+    "rust-analyzer": {
+        "name": "rust-analyzer",
+        "remotes": {
+            "origin": "git@github.com:epage/rust-analyzer.git",
+            "upstream": "https://github.com/rust-lang/rust-analyzer.git"
+        }
+    },
     "rust-clippy": {
         "name": "rust-clippy",
         "remotes": {
@@ -735,6 +676,13 @@
             "upstream": "git@github.com:frewsxcv/rust-crates-index.git"
         }
     },
+    "rust-forge": {
+        "name": "rust-forge",
+        "remotes": {
+            "origin": "git@github.com:epage/rust-forge.git",
+            "upstream": "https://github.com/rust-lang/rust-forge.git"
+        }
+    },
     "rust-project-goals": {
         "name": "rust-project-goals",
         "remotes": {
@@ -742,10 +690,16 @@
             "upstream": "https://github.com/rust-lang/rust-project-goals.git"
         }
     },
+    "rust-reference": {
+        "name": "rust-reference",
+        "remotes": {
+            "origin": "git@github.com:epage/rust-reference.git",
+            "upstream": "https://github.com/rust-lang/reference.git"
+        }
+    },
     "rust-rfcs": {
         "name": "rust-rfcs",
         "remotes": {
-            "manishearth": "https://github.com/Manishearth/rfcs.git",
             "origin": "git@github.com:epage/rfcs.git",
             "upstream": "git@github.com:rust-lang/rfcs.git"
         }
@@ -947,13 +901,6 @@
             "upstream": "git@github.com:crate-ci/typos.git"
         }
     },
-    "unicode-xid": {
-        "name": "unicode-xid",
-        "remotes": {
-            "origin": "git@github.com:epage/unicode-xid.git",
-            "upstream": "git@github.com:unicode-rs/unicode-xid.git"
-        }
-    },
     "vte": {
         "name": "vte",
         "remotes": {
@@ -974,13 +921,6 @@
             "nom": "git@github.com:Geal/nom.git",
             "origin": "git@github.com:epage/winnow.git",
             "upstream": "git@github.com:winnow-rs/winnow.git"
-        }
-    },
-    "yansi": {
-        "name": "yansi",
-        "remotes": {
-            "origin": "git@github.com:epage/yansi.git",
-            "upstream": "git@github.com:SergioBenitez/yansi.git"
         }
     },
     "zed": {
