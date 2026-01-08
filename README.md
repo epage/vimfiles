@@ -22,6 +22,95 @@ Note: be sure to set the email address in `.config/git/config`.
 
 # Machine setup
 
+## Linux
+
+### Debian-derived
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
+sudo apt install ripgrep
+```
+
+### Manjaro
+
+```bash
+sudo pamac install pkgconf make cmake gcc
+sudo pamac install ripgrep
+sudo pamac install tmux
+sudo pamac install pkgfile
+```
+
+Add to `.bashrc`
+```bash
+source /usr/share/doc/pkgfile/command-not-found.bash
+```
+
+### General
+
+```bash
+curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
+source ~/.cargo/env
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
+fc-cache -f -v
+curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
+```
+
+Install
+- https://github.com/zellij-org/zellij/releases
+- https://github.com/neovim/neovim/releases
+- https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
+Add to `.bashrc`
+
+```bash
+export MANPAGER="vim -M +MANPAGER -"
+
+export EDITOR=vim
+
+export PATH=$PATH:$HOME/bin
+
+export BAT_THEME=OneHalfLight
+
+source <(jj util completion bash)
+
+source <(CARGO_COMPLETE=bash nargo)
+
+eval "$(starship init bash)"
+
+# For WSL
+# export DISPLAY=:0
+# /usr/bin/keychain -q --nogui $HOME/.ssh/id_github
+# source $HOME/.keychain/$HOSTNAME-sh
+```
+
+## Mac
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install bash
+brew install git bash-completion
+brew install macvim neovim ripgrep fd zellij
+brew cask install diffmerge firefox iterm2 dropbox sweet-home3d
+
+curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
+source ~/.cargo/env
+```
+
+Add to `.bash_profile`
+
+```bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+
+export MANPAGER="vim -M +MANPAGER -"
+
+export EDITOR=vim
+```
+
 ## Windows, elevated
 
 ```bash
@@ -41,115 +130,27 @@ el choco install vcxsrv -y
 el choco install winmerge -y
 ```
 
-## Linux
-
-### Manjaro
-
-```bash
-sudo pamac install pkgconf make cmake gcc
-sudo pamac install ripgrep
-sudo pamac install tmux
-sudo pamac install pkgfile
-```
-
-Add to `.bashrc`
-```bash
-source /usr/share/doc/pkgfile/command-not-found.bash
-```
-
-### Mint
-
-```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
-sudo apt install ripgrep
-```
-
-### General
-
-```bash
-curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
-source ~/.cargo/env
-rustup component add rustfmt clippy
-rustup toolchain install beta nightly
-
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
-fc-cache -f -v
-curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
-```
-
-Add to `.bashrc`
-
-```bash
-export MANPAGER="vim -M +MANPAGER -"
-
-export EDITOR=vim
-
-export PATH=$PATH:$HOME/bin
-
-eval "$(starship init bash)"
-
-# For WSL
-# export DISPLAY=:0
-# /usr/bin/keychain -q --nogui $HOME/.ssh/id_github
-# source $HOME/.keychain/$HOSTNAME-sh
-```
-
-## Mac
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew install bash
-brew install git bash-completion
-brew install macvim
-brew install neovim
-brew install ripgrep
-brew install fd
-brew install exa
-brew install zellij
-brew install python@3.8
-brew cask install diffmerge firefox iterm2 dropbox sweet-home3d
-
-curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
-source ~/.cargo/env
-rustup component add rustfmt
-rustup component add clippy
-rustup toolchain install beta
-rustup toolchain install nightly
-```
-
-Add to `.bash_profile`
-
-```bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-
-export MANPAGER="vim -M +MANPAGER -"
-
-export EDITOR=vim
-```
-
 ## Regular prompt
 
 ```bash
-rustup install beta
-rustup install nightly
-rustup component add clippy
-rustup component add rustfmt
-cargo install fd-find
+rustup install beta nightly
+rustup component add rustfmt clippy
+cargo install bacon
 cargo install bat
 cargo install broot
 cargo install ddh
-cargo install exa
+cargo install fd-find
+cargo install hexyl
 cargo install hyperfine
+cargo install mdbook
+cargo install rumdl
 cargo install tokei
-cargo install cargo-tree
-cargo install cargo-outdated
-cargo install cargo-llvm-lines
-cargo install cargo-asm
-cargo install cargo-expand
+cargo install zola
 cargo install cargo-bloat
+cargo install cargo-expand
+cargo install cargo-hack
+cargo install cargo-llvm-lines
+cargo install cargo-outdated
+cargo install cargo-show-asm
 cargo install --git https://github.com/rust-lang/measureme crox flamegraph summarize
 ```
