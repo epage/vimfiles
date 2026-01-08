@@ -120,9 +120,12 @@ return {
       require("crates").setup()
     end,
   },
+
   -- { "mrjones2014/nvim-ts-rainbow" },
   { url = "https://gitlab.com/HiPhish/rainbow-delimiters.nvim.git" },
+
   { "m-demare/hlargs.nvim" },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
@@ -139,9 +142,6 @@ return {
       })
     end,
   },
-  {
-    "nvim-treesitter/nvim-treesitter",
-  },
 
   {
     "neovim/nvim-lspconfig",
@@ -154,6 +154,7 @@ return {
       },
     },
   },
+
   {
     'felpafel/inlay-hint.nvim',
     event = 'LspAttach',
