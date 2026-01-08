@@ -46,14 +46,26 @@ def repo_data(dir):
         "remotes": {
             name: fetch_url(dir, name)
             for name in list_remotes(dir)
-        }
+        },
+        "branches": [
+            name
+            for name in list_branches(dir)
+            if name not in ["main", "master"]
+        ]
     }
+    if not data["branches"]:
+        del data["branches"]
     return data
 
 
 def list_remotes(dir):
     p = subprocess.run(["git", "-C", dir, "remote", "show"], encoding="utf-8", capture_output=True, check=True)
     return [l.strip() for l in p.stdout.splitlines() if l.strip()]
+
+
+def list_branches(dir):
+    p = subprocess.run(["git", "-C", dir, "branch"], encoding="utf-8", capture_output=True, check=True)
+    return [l.strip().removeprefix("* ") for l in p.stdout.splitlines() if l.strip()]
 
 
 def fetch_url(dir, remote):
