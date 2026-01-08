@@ -6,14 +6,6 @@
             "upstream": "git@github.com:epage/_rust.git"
         }
     },
-    "acp-pattern-api": {
-        "name": "acp-pattern-api",
-        "remotes": {
-            "_rust": "git@github.com:epage/_rust.git",
-            "origin": "git@github.com:epage/acp-pattern-api.git",
-            "upstream": "git@github.com:epage/acp-pattern-api.git"
-        }
-    },
     "annotate-snippets-rs": {
         "name": "annotate-snippets-rs",
         "remotes": {
@@ -97,33 +89,12 @@
             "upstream": "git@github.com:rust-lang/cargo.git"
         }
     },
-    "cargo-api": {
-        "name": "cargo-api",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-crate-api.git",
-            "upstream": "git@github.com:crate-ci/cargo-crate-api.git"
-        }
-    },
-    "cargo-breaking": {
-        "name": "cargo-breaking",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-breaking.git",
-            "upstream": "https://github.com/iomentum/cargo-breaking.git"
-        }
-    },
     "cargo-cargofmt": {
         "name": "cargo-cargofmt",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-cargofmt.git",
             "upstream": "git@github.com:crate-ci/cargo-cargofmt.git"
-        }
-    },
-    "cargo-deny": {
-        "name": "cargo-deny",
-        "remotes": {
-            "origin": "git@github.com:epage/cargo-deny.git",
-            "upstream": "https://github.com/EmbarkStudios/cargo-deny.git"
         }
     },
     "cargo-edit": {
@@ -223,13 +194,6 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/codegenrs.git",
             "upstream": "git@github.com:crate-ci/codegenrs.git"
-        }
-    },
-    "color-print": {
-        "name": "color-print",
-        "remotes": {
-            "origin": "git@gitlab.com:eopage/color-print.git",
-            "upstream": "git@gitlab.com:dajoha/color-print.git"
         }
     },
     "combine": {
@@ -433,13 +397,6 @@
             "origin": "https://github.com/IQAndreas/github-issues-import.git"
         }
     },
-    "gitoxide": {
-        "name": "gitoxide",
-        "remotes": {
-            "origin": "git@github.com:epage/gitoxide.git",
-            "upstream": "https://github.com/Byron/gitoxide.git"
-        }
-    },
     "google-summer-of-code": {
         "name": "google-summer-of-code",
         "remotes": {
@@ -528,31 +485,10 @@
             "upstream": "git@github.com:rosetta-rs/md-rosetta-rs.git"
         }
     },
-    "mdBook": {
-        "name": "mdBook",
-        "remotes": {
-            "origin": "git@github.com:epage/mdBook.git",
-            "upstream": "https://github.com/rust-lang/mdBook.git"
-        }
-    },
     "mottainai": {
         "name": "mottainai",
         "remotes": {
             "origin": "git@github.com:epage/mottainai.git"
-        }
-    },
-    "nextest": {
-        "name": "nextest",
-        "remotes": {
-            "origin": "git@github.com:epage/nextest.git",
-            "upstream": "git@github.com:nextest-rs/nextest.git"
-        }
-    },
-    "nom": {
-        "name": "nom",
-        "remotes": {
-            "origin": "git@github.com:epage/nom.git",
-            "upstream": "https://github.com/Geal/nom.git"
         }
     },
     "once_cell_polyfill": {
@@ -569,24 +505,11 @@
             "upstream": "git@github.com:organize-rs/organize.git"
         }
     },
-    "oval": {
-        "name": "oval",
-        "remotes": {
-            "origin": "git@github.com:epage/oval.git"
-        }
-    },
     "parse-rosetta-rs": {
         "name": "parse-rosetta-rs",
         "remotes": {
             "origin": "git@github.com:epage/parse-rosetta-rs.git",
             "upstream": "git@github.com:rosetta-rs/parse-rosetta-rs.git"
-        }
-    },
-    "peps": {
-        "name": "peps",
-        "remotes": {
-            "origin": "git@github.com:epage/peps.git",
-            "upstream": "https://github.com/python/peps.git"
         }
     },
     "predicates-rs": {
@@ -626,13 +549,6 @@
             "upstream": "git@github.com:rust-cli/rexpect.git"
         }
     },
-    "ripgrep": {
-        "name": "ripgrep",
-        "remotes": {
-            "origin": "git@github.com:epage/ripgrep.git",
-            "upstream": "git@github.com:BurntSushi/ripgrep.git"
-        }
-    },
     "roff-rs": {
         "name": "roff-rs",
         "remotes": {
@@ -667,13 +583,6 @@
         "remotes": {
             "origin": "https://github.com/epage/rust-clippy.git",
             "upstream": "git@github.com:rust-lang/rust-clippy.git"
-        }
-    },
-    "rust-crates-index": {
-        "name": "rust-crates-index",
-        "remotes": {
-            "origin": "git@github.com:epage/rust-crates-index.git",
-            "upstream": "git@github.com:frewsxcv/rust-crates-index.git"
         }
     },
     "rust-forge": {
@@ -731,40 +640,6 @@
             "upstream": "https://github.com/rust-lang/rustup.git"
         }
     },
-    "schemastore": {
-        "name": "schemastore",
-        "remotes": {
-            "origin": "git@github.com:epage/schemastore.git",
-            "upstream": "https://github.com/SchemaStore/schemastore.git"
-        }
-    },
-    "serde": {
-        "name": "serde",
-        "remotes": {
-            "origin": "git@github.com:epage/serde.git",
-            "upstream": "https://github.com/serde-rs/serde.git"
-        }
-    },
-    "serde-rs.github.io": {
-        "name": "serde-rs.github.io",
-        "remotes": {
-            "origin": "git@github.com:epage/serde-rs.github.io.git",
-            "upstream": "https://github.com/serde-rs/serde-rs.github.io.git"
-        }
-    },
-    "serde_json": {
-        "name": "serde_json",
-        "remotes": {
-            "origin": "https://github.com/serde-rs/json.git"
-        }
-    },
-    "shadow-rs": {
-        "name": "shadow-rs",
-        "remotes": {
-            "origin": "git@github.com:epage/shadow-rs.git",
-            "upstream": "https://github.com/baoyachi/shadow-rs.git"
-        }
-    },
     "smelt": {
         "name": "smelt",
         "remotes": {
@@ -787,13 +662,6 @@
             "upstream": "git@github.com:assert-rs/snapbox.git"
         }
     },
-    "sqlformat-rs": {
-        "name": "sqlformat-rs",
-        "remotes": {
-            "origin": "git@github.com:epage/sqlformat-rs.git",
-            "upstream": "https://github.com/shssoichiro/sqlformat-rs.git"
-        }
-    },
     "string-rosetta-rs": {
         "name": "string-rosetta-rs",
         "remotes": {
@@ -806,26 +674,6 @@
         "remotes": {
             "origin": "git@github.com:epage/supports-unicode.git",
             "upstream": "https://github.com/zkat/supports-unicode.git"
-        }
-    },
-    "tame-index": {
-        "name": "tame-index",
-        "remotes": {
-            "origin": "https://github.com/EmbarkStudios/tame-index.git"
-        }
-    },
-    "taplo": {
-        "name": "taplo",
-        "remotes": {
-            "origin": "git@github.com:epage/taplo.git",
-            "upstream": "https://github.com/tamasfe/taplo.git"
-        }
-    },
-    "termcolor": {
-        "name": "termcolor",
-        "remotes": {
-            "origin": "git@github.com:epage/termcolor.git",
-            "upstream": "https://github.com/BurntSushi/termcolor.git"
         }
     },
     "termgraph": {
@@ -864,13 +712,6 @@
             "upstream": "https://github.com/BurntSushi/toml-test.git"
         }
     },
-    "toml-test-matrix": {
-        "name": "toml-test-matrix",
-        "remotes": {
-            "origin": "git@github.com:epage/toml-test-matrix.git",
-            "upstream": "git@github.com:arp242/toml-test-matrix.git"
-        }
-    },
     "toml-test-rs": {
         "name": "toml-test-rs",
         "remotes": {
@@ -906,12 +747,6 @@
         "remotes": {
             "origin": "git@github.com:epage/vte.git",
             "upstream": "git@github.com:alacritty/vte.git"
-        }
-    },
-    "wezterm": {
-        "name": "wezterm",
-        "remotes": {
-            "origin": "git@github.com:wez/wezterm.git"
         }
     },
     "winnow": {
