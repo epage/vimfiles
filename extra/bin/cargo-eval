@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cargo run --quiet --manifest-path ~/src/personal/cargo-script-mvs/Cargo.toml --bin cargo-eval -- "$@"

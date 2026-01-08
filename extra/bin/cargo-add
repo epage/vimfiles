@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cargo run --manifest-path ~/src/personal/cargo/Cargo.toml -- add "$@"

@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-cargo run --manifest-path ~/src/personal/git-stack/Cargo.toml --bin git-stack -- "$@"
+unset CARGO
+unset RUSTFLAGS
+cargo +stable run --manifest-path ~/src/personal/git-stack/Cargo.toml --bin git-stack -- "$@"

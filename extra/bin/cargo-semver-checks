@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
+unset CARGO
+unset RUSTFLAGS
 cargo run --manifest-path ~/src/personal/cargo-semver-check/Cargo.toml --bin cargo-semver-checks -- "$@"

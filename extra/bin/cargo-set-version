@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-cargo run --manifest-path ~/src/personal/cargo-edit/Cargo.toml --bin cargo-set-version -- set-version "$@"
+unset CARGO
+unset RUSTFLAGS
+cargo run --manifest-path ~/src/personal/cargo-edit/Cargo.toml --bin cargo-set-version -- "$@"

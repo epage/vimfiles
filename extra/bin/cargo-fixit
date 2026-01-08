@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+unset CARGO
+unset RUSTFLAGS
+cargo +nightly run --manifest-path ~/src/personal/cargo-fixit/Cargo.toml -- "$@"

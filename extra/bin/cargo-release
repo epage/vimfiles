@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 unset CARGO
-cargo +nightly run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- "$@" -Zworkspace-publish
+unset RUSTFLAGS
+cargo run --manifest-path ~/src/personal/cargo-release/Cargo.toml -- "$@"
