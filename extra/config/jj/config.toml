@@ -1,0 +1,6 @@
+[user]
+name = "Ed Page"
+email = "eopage@gmail.com"
+
+[ui]
+default-command = "log"
