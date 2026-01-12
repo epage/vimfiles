@@ -10,9 +10,9 @@ cd ~
 git clone git@github.com:epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
 cp .vim/extra/.tmux.conf ~/
-mkdir -p ~/.config ~/bin
+mkdir -p ~/.config ~/.local/bin
 cp -r .vim/extra/config/* ~/.config/
-cp -r .vim/extra/bin/* ~/bin
+cp -r .vim/extra/bin/* ~/.local/bin
 ```
 Note: be sure to set the email address in `.config/git/config`.
 
@@ -56,7 +56,7 @@ source ~/.cargo/env
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
 fc-cache -f -v
-curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/bin
+curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 ```
 
 Install
