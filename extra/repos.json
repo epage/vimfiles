@@ -12,7 +12,6 @@
     "annotate-snippets-rs": {
         "name": "annotate-snippets-rs",
         "remotes": {
-            "Muscraft": "git@github.com:Muscraft/annotate-snippets-rs.git",
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/annotate-snippets-rs.git",
             "upstream": "https://github.com/rust-lang/annotate-snippets-rs.git"
@@ -22,10 +21,7 @@
         "name": "anstyle",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
-            "hanna-kruppe": "git@github.com:hanna-kruppe/anstyle.git",
-            "joshtriplett": "git@github.com:joshtriplett/anstyle.git",
             "origin": "git@github.com:epage/anstyle.git",
-            "renovate": null,
             "upstream": "git@github.com:rust-cli/anstyle.git",
             "vte": "git@github.com:alacritty/vte.git"
         }
@@ -42,7 +38,6 @@
         "name": "argparse-rosetta-rs",
         "remotes": {
             "origin": "git@github.com:epage/argparse-rosetta-rs.git",
-            "pacak": null,
             "upstream": "git@github.com:rosetta-rs/argparse-rosetta-rs.git"
         }
     },
@@ -96,41 +91,8 @@
     "cargo": {
         "name": "cargo",
         "remotes": {
-            "AlexTMjugador": null,
-            "Craig-Macomber": "git@github.com:Craig-Macomber/cargo.git",
-            "Flowrey": "git@github.com:Flowrey/cargo.git",
-            "Gmin2": "git@github.com:Gmin2/cargo.git",
-            "Kobzol": "git@github.com:Kobzol/cargo.git",
-            "LuuuXXX": "git@github.com:LuuuXXX/cargo.git",
-            "Rustin170506": "git@github.com:Rustin170506/cargo.git",
-            "WhyNotHugo": "git@github.com:WhyNotHugo/cargo.git",
-            "baby230211": "git@github.com:baby230211/cargo.git",
-            "build-rs": "https://github.com/CAD97/build-rs.git",
-            "calavera": "git@github.com:calavera/cargo.git",
-            "demurgos": "git@github.com:demurgos/cargo.git",
-            "dohse": "git@github.com:dohse/cargo.git",
-            "elchukc": "git@github.com:elchukc/cargo.git",
-            "eth3lbert": "git@github.com:eth3lbert/cargo.git",
-            "heisen-li": "git@github.com:heisen-li/cargo.git",
-            "joshtriplett": "git@github.com:joshtriplett/cargo.git",
-            "linyihai": "git@github.com:linyihai/cargo.git",
-            "mladedav": "git@github.com:mladedav/cargo.git",
-            "mo8it": "git@github.com:mo8it/cargo.git",
-            "namanlp": "git@github.com:namanlp/cargo.git",
-            "ojuschugh1": "git@github.com:ojuschugh1/cargo.git",
             "origin": "git@github.com:epage/cargo.git",
-            "osiewicz": "git@github.com:osiewicz/cargo.git",
-            "ranger-ross": "git@github.com:ranger-ross/cargo.git",
-            "renovate": null,
-            "shannmu": "git@github.com:shannmu/cargo.git",
-            "stupendoussuperpowers": "git@github.com:stupendoussuperpowers/cargo.git",
-            "susitsm": "git@github.com:susitsm/cargo.git",
-            "torhovland": "git@github.com:torhovland/cargo.git",
-            "tshepang": "git@github.com:tshepang/cargo.git",
-            "tweag": "git@github.com:tweag/cargo.git",
-            "upstream": "git@github.com:rust-lang/cargo.git",
-            "weihanglo": "git@github.com:weihanglo/cargo.git",
-            "yerke": "git@github.com:yerke/cargo.git"
+            "upstream": "git@github.com:rust-lang/cargo.git"
         }
     },
     "cargo-cargofmt": {
@@ -144,7 +106,6 @@
     "cargo-edit": {
         "name": "cargo-edit",
         "remotes": {
-            "kevinheavey": "git@github.com:kevinheavey/cargo-edit.git",
             "origin": "git@github.com:epage/cargo-edit.git",
             "upstream": "git@github.com:killercup/cargo-edit.git"
         }
@@ -152,7 +113,6 @@
     "cargo-fixit": {
         "name": "cargo-fixit",
         "remotes": {
-            "Pyr0de": "git@github.com:Pyr0de/cargo-fixit.git",
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-fixit.git",
             "upstream": "git@github.com:crate-ci/cargo-fixit.git"
@@ -163,14 +123,12 @@
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-plumbing.git",
-            "secona": "git@github.com:secona/cargo-plumbing.git",
             "upstream": "git@github.com:crate-ci/cargo-plumbing.git"
         }
     },
     "cargo-release": {
         "name": "cargo-release",
         "remotes": {
-            "EmbarkStudios": "git@github.com:EmbarkStudios/cargo-release.git",
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-release.git",
             "upstream": "git@github.com:crate-ci/cargo-release.git"
@@ -197,24 +155,9 @@
         ],
         "name": "clap",
         "remotes": {
-            "ModProg": "git@github.com:ModProg/clap.git",
-            "Serock3": "git@github.com:Serock3/clap.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "aparcar": "git@github.com:aparcar/clap.git",
-            "ilyagr": "git@github.com:ilyagr/clap.git",
-            "imtherealnaska": "git@github.com:imtherealnaska/clap.git",
-            "krobelus": "git@github.com:krobelus/clap.git",
-            "okapia": "git@github.com:okapia/clap.git",
             "origin": "git@github.com:epage/clap.git",
-            "poliorcetics": "git@github.com:poliorcetics/clap.git",
-            "shannmu": "git@github.com:shannmu/clap.git",
-            "smoqadam": "git@github.com:smoqadam/clap.git",
-            "sudotac": "git@github.com:sudotac/clap.git",
-            "template": "https://github.com/epage/_rust.git",
-            "tesuji": "git@github.com:tesuji/clap.git",
-            "upstream": "git@github.com:clap-rs/clap.git",
-            "xixishidibei": null,
-            "zanieb": "git@github.com:zanieb/clap.git"
+            "upstream": "git@github.com:clap-rs/clap.git"
         }
     },
     "clap-cargo": {
@@ -229,7 +172,6 @@
         "name": "clap-verbosity-flag",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
-            "joshka": "git@github.com:joshka/clap-verbosity-flag.git",
             "origin": "git@github.com:epage/clap-verbosity-flag.git",
             "upstream": "git@github.com:clap-rs/clap-verbosity-flag.git"
         }
@@ -256,8 +198,7 @@
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cobalt.rs.git",
-            "upstream": "git@github.com:cobalt-org/cobalt.rs.git",
-            "vbfox": "https://github.com/vbfox/fork_cobalt.rs.git"
+            "upstream": "git@github.com:cobalt-org/cobalt.rs.git"
         }
     },
     "codegenrs": {
@@ -278,7 +219,6 @@
     "committed": {
         "name": "committed",
         "remotes": {
-            "JP-Ellis": null,
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/committed.git",
             "upstream": "git@github.com:crate-ci/committed.git"
@@ -287,10 +227,8 @@
     "completest": {
         "name": "completest",
         "remotes": {
-            "NyCodeGHG": "git@github.com:NyCodeGHG/completest.git",
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/completest.git",
-            "tesuji": "https://github.com/tesuji/completest-rs.git",
             "upstream": "git@github.com:assert-rs/completest.git"
         }
     },
@@ -304,12 +242,8 @@
     "config-rs": {
         "name": "config-rs",
         "remotes": {
-            "JakeStanger": "git@github.com:JakeStanger/config-rs.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "allevo": "git@github.com:allevo/config-rs.git",
-            "matthiasbeyer": "git@github.com:matthiasbeyer/config-rs.git",
             "origin": "git@github.com:epage/config-rs.git",
-            "sunshowers": "git@github.com:sunshowers/config-rs.git",
             "upstream": "git@github.com:rust-cli/config-rs.git"
         }
     },
@@ -338,13 +272,9 @@
     "env_logger": {
         "name": "env_logger",
         "remotes": {
-            "ChrisDenton": "git@github.com:ChrisDenton/env_logger.git",
-            "Maximkaaa": "git@github.com:Maximkaaa/env_logger.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "atouchet": null,
             "origin": "git@github.com:epage/env_logger.git",
-            "upstream": "git@github.com:rust-cli/env_logger.git",
-            "y-yagi": "git@github.com:y-yagi/env_logger.git"
+            "upstream": "git@github.com:rust-cli/env_logger.git"
         }
     },
     "epage-publish-test": {
@@ -568,7 +498,6 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/libtest2.git",
             "rustest": "https://github.com/mgautierfr/rustest.git",
-            "skogseth": "git@github.com:skogseth/libtest2.git",
             "upstream": "git@github.com:crate-ci/libtest2.git"
         }
     },
@@ -581,9 +510,7 @@
     "liquid-rust": {
         "name": "liquid-rust",
         "remotes": {
-            "YuiYukihira": "git@github.com:YuiYukihira/liquid-rust.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "emmyoh": "git@github.com:emmyoh/liquid-rust.git",
             "origin": "git@github.com:epage/liquid-rust.git",
             "upstream": "git@github.com:cobalt-org/liquid-rust.git"
         }
@@ -626,7 +553,6 @@
     "parse-rosetta-rs": {
         "name": "parse-rosetta-rs",
         "remotes": {
-            "dburgener": "git@github.com:dburgener/parse-rosetta-rs.git",
             "origin": "git@github.com:epage/parse-rosetta-rs.git",
             "upstream": "git@github.com:rosetta-rs/parse-rosetta-rs.git"
         }
@@ -635,7 +561,6 @@
         "name": "predicates-rs",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
-            "fornwall": "git@github.com:fornwall/predicates-rs.git",
             "origin": "git@github.com:epage/predicates-rs.git",
             "upstream": "git@github.com:assert-rs/predicates-rs.git"
         }
@@ -745,11 +670,7 @@
         ],
         "name": "rust-rfcs",
         "remotes": {
-            "eopb": "git@github.com:eopb/rfcs.git",
-            "manishearth": "https://github.com/Manishearth/rfcs.git",
             "origin": "git@github.com:epage/rfcs.git",
-            "poliorcetics": "git@github.com:poliorcetics/rfcs.git",
-            "tgross35": "git@github.com:tgross35/rfcs.git",
             "upstream": "git@github.com:rust-lang/rfcs.git"
         }
     },
@@ -857,8 +778,6 @@
         "name": "toml",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
-            "benbrittain": "git@github.com:benbrittain/toml.git",
-            "jplatte": "git@github.com:jplatte/toml.git",
             "origin": "git@github.com:epage/toml_edit.git",
             "upstream": "git@github.com:toml-rs/toml.git"
         }
@@ -898,13 +817,7 @@
         ],
         "name": "typos",
         "remotes": {
-            "Bnyro": "git@github.com:Bnyro/typos.git",
-            "Ghaniyyat05": "git@github.com:Ghaniyyat05/typos.git",
-            "Its-Just-Nans": "git@github.com:Its-Just-Nans/typos.git",
-            "JP-Ellis": null,
-            "Zxilly": "git@github.com:Zxilly/typos.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "not-my-profile": "git@github.com:not-my-profile/typos.git",
             "origin": "git@github.com:epage/typos.git",
             "upstream": "git@github.com:crate-ci/typos.git"
         }
@@ -932,19 +845,10 @@
         ],
         "name": "winnow",
         "remotes": {
-            "39555": "git@github.com:39555/winnow.git",
             "_rust": "git@github.com:epage/_rust.git",
-            "asdfuser": "git@github.com:asdfuser/winnow.git",
-            "baoyachi": null,
-            "dezyh": "git@github.com:dezyh/winnow.git",
-            "glittershark": "git@github.com:glittershark/nom.git",
-            "jobarr-amzn": "git@github.com:jobarr-amzn/winnow.git",
             "nom": "git@github.com:Geal/nom.git",
             "origin": "git@github.com:epage/winnow.git",
-            "silvanshade": "git@github.com:silvanshade/winnow.git",
-            "ttsugriy": "https://github.com/ttsugriy/nom.git",
-            "upstream": "git@github.com:winnow-rs/winnow.git",
-            "vwkd": null
+            "upstream": "git@github.com:winnow-rs/winnow.git"
         }
     },
     "zed": {
