@@ -30,7 +30,6 @@ def main():
     else:
         for repo in raw.values():
             prepare_repo(root, repo)
-            break
 
 
 def prepare_repo(root, repo):
