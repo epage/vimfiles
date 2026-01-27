@@ -1,8 +1,5 @@
 {
     "_rust": {
-        "branches": [
-            "template-update"
-        ],
         "name": "_rust",
         "remotes": {
             "origin": "git@github.com:epage/_rust.git",
@@ -146,6 +143,13 @@
         "remotes": {
             "origin": "git@github.com:epage/cargo-semver-checks-action.git",
             "upstream": "https://github.com/obi1kenobi/cargo-semver-checks-action.git"
+        }
+    },
+    "cargo-tree-tui": {
+        "name": "cargo-tree-tui",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-tree-tui.git",
+            "upstream": "https://github.com/orhun/cargo-tree-tui.git"
         }
     },
     "clap": {
@@ -573,9 +577,6 @@
         }
     },
     "proc-exit": {
-        "branches": [
-            "template-update"
-        ],
         "name": "proc-exit",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
@@ -688,9 +689,6 @@
         }
     },
     "rustest": {
-        "branches": [
-            "parallel"
-        ],
         "name": "rustest",
         "remotes": {
             "origin": "git@github.com:epage/rustest.git",
