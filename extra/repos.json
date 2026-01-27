@@ -213,13 +213,6 @@
             "upstream": "git@github.com:crate-ci/codegenrs.git"
         }
     },
-    "combine": {
-        "name": "combine",
-        "remotes": {
-            "origin": "git@github.com:epage/combine.git",
-            "upstream": "https://github.com/Marwes/combine.git"
-        }
-    },
     "committed": {
         "name": "committed",
         "remotes": {
@@ -342,13 +335,6 @@
             "upstream": "git@github.com:gitext-rs/git-branch-stash.git"
         }
     },
-    "git-branchless": {
-        "name": "git-branchless",
-        "remotes": {
-            "origin": "git@github.com:epage/git-branchless.git",
-            "upstream": "git@github.com:arxanas/git-branchless.git"
-        }
-    },
     "git-config-env": {
         "name": "git-config-env",
         "remotes": {
@@ -381,13 +367,6 @@
             "upstream": "git@github.com:gitext-rs/git-fixture.git"
         }
     },
-    "git-series": {
-        "name": "git-series",
-        "remotes": {
-            "origin": "git@github.com:epage/git-series.git",
-            "upstream": "https://github.com/git-series/git-series.git"
-        }
-    },
     "git-stack": {
         "name": "git-stack",
         "remotes": {
@@ -402,13 +381,6 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/git2-ext.git",
             "upstream": "git@github.com:gitext-rs/git2-ext.git"
-        }
-    },
-    "git2-rs": {
-        "name": "git2-rs",
-        "remotes": {
-            "origin": "git@github.com:epage/git2-rs.git",
-            "upstream": "git@github.com:rust-lang/git2-rs.git"
         }
     },
     "github-issues-import": {
@@ -675,12 +647,6 @@
             "upstream": "git@github.com:rust-lang/rfcs.git"
         }
     },
-    "rust-script": {
-        "name": "rust-script",
-        "remotes": {
-            "origin": "git@github.com:fornwall/rust-script.git"
-        }
-    },
     "rust-team": {
         "name": "rust-team",
         "remotes": {
@@ -739,13 +705,6 @@
         "remotes": {
             "origin": "git@github.com:epage/string-rosetta-rs.git",
             "upstream": "git@github.com:rosetta-rs/string-rosetta-rs.git"
-        }
-    },
-    "supports-unicode": {
-        "name": "supports-unicode",
-        "remotes": {
-            "origin": "git@github.com:epage/supports-unicode.git",
-            "upstream": "https://github.com/zkat/supports-unicode.git"
         }
     },
     "termgraph": {

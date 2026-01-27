@@ -20,10 +20,13 @@ def main():
     log_format = '(%(relativeCreated)5d) %(levelname)-5s %(name)s.%(funcName)s: %(message)s'
     logging.basicConfig(level=logging.DEBUG, format=log_format)
 
-    try:
-        raw = json.loads(REPOS.read_text())
-    except FileNotFoundError:
+    if True:
         raw = {}
+    else:
+        try:
+            raw = json.loads(REPOS.read_text())
+        except FileNotFoundError:
+            raw = {}
 
     root = args.root.expanduser()
     pool = multiprocessing.dummy.Pool()
