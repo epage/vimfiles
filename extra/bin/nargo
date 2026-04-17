@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 RUSTFLAGS= CARGO_LOG= CARGO_COMPLETE= cargo build --manifest-path ~/src/personal/cargo/Cargo.toml
-RUST_BACKTRACE=1 rustup run nightly ~/src/personal/cargo/target/debug/cargo -Zscript -Zmsrv-policy -Zunstable-options -Zbuild-analysis "$@"
+RUST_BACKTRACE=1 rustup run nightly ~/src/personal/cargo/target/debug/cargo -Zunstable-options "$@"
+#RUST_BACKTRACE=1 rustup run nightly ~/src/personal/cargo/target/debug/cargo "$@"

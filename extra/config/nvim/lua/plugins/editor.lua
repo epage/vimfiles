@@ -7,7 +7,7 @@ vim.o.ignorecase = false -- lazy enables this
 
 return {
   -- Too magical, disables `x`
-  { "ggandor/leap.nvim", enabled = false },
+  { "https://codeberg.org/andyg/leap.nvim", enabled = false },
 
   { "norcalli/nvim-colorizer.lua" },
 

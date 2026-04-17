@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+unset CARGO
+unset RUSTFLAGS
+cargo run --manifest-path ~/src/personal/cargo-tree-tui/Cargo.toml --bin cargo-tree-tui -- "$@"
