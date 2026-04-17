@@ -61,6 +61,13 @@
             "upstream": "https://github.com/sharkdp/bat.git"
         }
     },
+    "battery-pack": {
+        "name": "battery-pack",
+        "remotes": {
+            "origin": "git@github.com:epage/battery-pack.git",
+            "upstream": "https://github.com/battery-pack-rs/battery-pack.git"
+        }
+    },
     "blog.rust-lang.org": {
         "name": "blog.rust-lang.org",
         "remotes": {
@@ -76,9 +83,6 @@
         }
     },
     "calendar": {
-        "branches": [
-            "cargo"
-        ],
         "name": "calendar",
         "remotes": {
             "origin": "git@github.com:epage/calendar.git",
@@ -86,6 +90,14 @@
         }
     },
     "cargo": {
+        "branches": [
+            "log",
+            "transitive",
+            "clean-all-ack",
+            "script-stable",
+            "warning",
+            "lockfile-path"
+        ],
         "name": "cargo",
         "remotes": {
             "origin": "git@github.com:epage/cargo.git",
@@ -98,6 +110,13 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-cargofmt.git",
             "upstream": "git@github.com:crate-ci/cargo-cargofmt.git"
+        }
+    },
+    "cargo-dlx": {
+        "name": "cargo-dlx",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-dlx.git",
+            "upstream": "https://github.com/Embers-of-the-Fire/cargo-dlx.git"
         }
     },
     "cargo-edit": {
@@ -113,6 +132,13 @@
             "_rust": "git@github.com:epage/_rust.git",
             "origin": "git@github.com:epage/cargo-fixit.git",
             "upstream": "git@github.com:crate-ci/cargo-fixit.git"
+        }
+    },
+    "cargo-override": {
+        "name": "cargo-override",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-override.git",
+            "upstream": "https://github.com/eopb/cargo-override.git"
         }
     },
     "cargo-plumbing": {
@@ -143,6 +169,24 @@
         "remotes": {
             "origin": "git@github.com:epage/cargo-semver-checks-action.git",
             "upstream": "https://github.com/obi1kenobi/cargo-semver-checks-action.git"
+        }
+    },
+    "cargo-team": {
+        "name": "cargo-team",
+        "remotes": {
+            "origin": "git@github.com:epage/cargo-team.git",
+            "upstream": "https://github.com/rust-lang/cargo-team.git"
+        }
+    },
+    "cargo-tnew": {
+        "branches": [
+            "workspace"
+        ],
+        "name": "cargo-tnew",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:crate-ci/cargo-tnew.git",
+            "upstream": "git@github.com:crate-ci/cargo-tnew.git"
         }
     },
     "cargo-tree-tui": {
@@ -283,6 +327,7 @@
     },
     "epage.github.io": {
         "branches": [
+            "job",
             "source"
         ],
         "name": "epage.github.io",
@@ -587,9 +632,7 @@
     },
     "rust": {
         "branches": [
-            "frontmatter",
-            "frontmatter-cr",
-            "merged_crate"
+            "frontmatter"
         ],
         "name": "rust",
         "remotes": {
@@ -637,6 +680,10 @@
     },
     "rust-rfcs": {
         "branches": [
+            "inherit-default",
+            "edits",
+            "cargo-min-publish-age",
+            "used-deps",
             "global",
             "split-home",
             "nit-lint-level"
@@ -644,6 +691,7 @@
         "name": "rust-rfcs",
         "remotes": {
             "origin": "git@github.com:epage/rfcs.git",
+            "tmccombs": "git@github.com:tmccombs/rust-rfcs.git",
             "upstream": "git@github.com:rust-lang/rfcs.git"
         }
     },
@@ -672,6 +720,9 @@
         }
     },
     "rustup": {
+        "branches": [
+            "cli"
+        ],
         "name": "rustup",
         "remotes": {
             "origin": "git@github.com:epage/rustup.git",
@@ -760,14 +811,6 @@
             "origin": "git@github.com:epage/toml.io.git"
         }
     },
-    "trycmd": {
-        "name": "trycmd",
-        "remotes": {
-            "_rust": "git@github.com:epage/_rust.git",
-            "origin": "git@github.com:epage/trycmd.git",
-            "upstream": "git@github.com:assert-rs/trycmd.git"
-        }
-    },
     "typos": {
         "branches": [
             "tz"
@@ -794,6 +837,7 @@
     },
     "winnow": {
         "branches": [
+            "v0.7-main",
             "macro",
             "v0.4-main",
             "v0.6-main",
@@ -809,9 +853,19 @@
         }
     },
     "zed": {
+        "branches": [
+            "profile"
+        ],
         "name": "zed",
         "remotes": {
             "origin": "https://github.com/zed-industries/zed.git"
+        }
+    },
+    "zizmor": {
+        "name": "zizmor",
+        "remotes": {
+            "origin": "git@github.com:epage/zizmor.git",
+            "upstream": "https://github.com/zizmorcore/zizmor.git"
         }
     }
 }
