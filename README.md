@@ -10,6 +10,7 @@ cd ~
 git clone git@github.com:epage/vimfiles.git .vim
 cp .vim/extra/.vimrc ~/
 cp .vim/extra/.tmux.conf ~/
+cp -r .vim/extra/.cargo ~/
 mkdir -p ~/.config ~/.local/bin
 cp -r .vim/extra/config/* ~/.config/
 cp -r .vim/extra/bin/* ~/.local/bin
@@ -29,7 +30,7 @@ Note: be sure to set the email address in `.config/git/config`.
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install build-essential pkg-config libssl-dev cmake curl unzip
+sudo apt install build-essential pkg-config libssl-dev cmake curl unzip vim
 sudo apt install ripgrep
 ```
 
@@ -63,6 +64,8 @@ Install
 - https://github.com/zellij-org/zellij/releases
 - https://github.com/neovim/neovim/releases
 - https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+- https://github.com/j178/prek/releases
+- https://github.com/jj-vcs/jj
 
 Add to `.bashrc`
 
