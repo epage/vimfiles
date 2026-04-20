@@ -93,7 +93,6 @@
         "branches": [
             "log",
             "transitive",
-            "clean-all-ack",
             "script-stable",
             "warning",
             "lockfile-path"
@@ -232,9 +231,6 @@
         }
     },
     "cobalt-org.github.io": {
-        "branches": [
-            "source"
-        ],
         "name": "cobalt-org.github.io",
         "remotes": {
             "origin": "git@github.com:epage/cobalt-org.github.io.git",
@@ -327,8 +323,7 @@
     },
     "epage.github.io": {
         "branches": [
-            "job",
-            "source"
+            "job"
         ],
         "name": "epage.github.io",
         "remotes": {
