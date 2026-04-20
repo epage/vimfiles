@@ -487,10 +487,6 @@
         }
     },
     "is_terminal_polyfill": {
-        "branches": [
-            "main-v1.48",
-            "main-v1.70"
-        ],
         "name": "is_terminal_polyfill",
         "remotes": {
             "origin": "git@github.com:epage/is_terminal_polyfill.git",
@@ -549,10 +545,6 @@
         }
     },
     "once_cell_polyfill": {
-        "branches": [
-            "main-v1.56",
-            "main-v1.70"
-        ],
         "name": "once_cell_polyfill",
         "remotes": {
             "origin": "git@github.com:epage/once_cell_polyfill.git",
@@ -832,12 +824,7 @@
     },
     "winnow": {
         "branches": [
-            "v0.7-main",
-            "macro",
-            "v0.4-main",
-            "v0.6-main",
-            "v0.5-main",
-            "v0.3-main"
+            "macro"
         ],
         "name": "winnow",
         "remotes": {
