@@ -35,8 +35,15 @@ def main():
 def prepare_repo(root, repo):
     logging.debug("Processing %s", repo["name"])
     repo_root = root / repo["name"]
-    if not repo_root.exists():
+    repo_exists = repo_root.exists()
+    jj_exists = (repo_root / ".jj").exists()
+
+    if not repo_exists:
         subprocess.run(["git", "clone", repo["remotes"]["origin"], repo_root], encoding="utf-8", capture_output=True, check=True)
+
+    if not jj_exists:
+        subprocess.run(["jj", "git", "init"], cwd=repo_root, capture_output=True, encoding="utf-8", check=True)
+
     for remote_name, remote_url in repo["remotes"].items():
         if remote_name == "origin":
             continue
@@ -46,6 +53,7 @@ def prepare_repo(root, repo):
             branch_name = p.stdout.strip()
             subprocess.run(["git", "-C", repo_root, "fetch", remote_name], encoding="utf-8", capture_output=True)
             subprocess.run(["git", "-C", repo_root, "reset", "--hard", f"{remote_name}/{branch_name}"], encoding="utf-8", capture_output=True)
+            subprocess.run(["jj", "bookmark", "track", branch_name, "--remote", remote_name], cwd=repo_root, capture_output=True, encoding="utf-8", check=True)
 
     hook = repo_root / ".pre-commit-config.yaml"
     if hook.exists():
