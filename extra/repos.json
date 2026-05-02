@@ -669,7 +669,6 @@
         "branches": [
             "inherit-default",
             "edits",
-            "cargo-min-publish-age",
             "used-deps",
             "global",
             "split-home",
@@ -678,7 +677,6 @@
         "name": "rust-rfcs",
         "remotes": {
             "origin": "git@github.com:epage/rfcs.git",
-            "tmccombs": "git@github.com:tmccombs/rust-rfcs.git",
             "upstream": "git@github.com:rust-lang/rfcs.git"
         }
     },

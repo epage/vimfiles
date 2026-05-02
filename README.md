@@ -74,8 +74,6 @@ export MANPAGER="vim -M +MANPAGER -"
 
 export EDITOR=vim
 
-export PATH=$PATH:$HOME/bin
-
 export BAT_THEME=OneHalfLight
 
 source <(jj util completion bash)
