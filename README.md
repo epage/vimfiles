@@ -1,26 +1,3 @@
-# Managing vim
-
-Setup [SSH keys with github](https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git).
-
-Setup [ssh-agent](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows) if needed
-
-Deploy
-```bash
-cd ~
-git clone git@github.com:epage/vimfiles.git .vim
-cp .vim/extra/.vimrc ~/
-cp .vim/extra/.tmux.conf ~/
-cp -r .vim/extra/.cargo ~/
-mkdir -p ~/.config ~/.local/bin
-cp -r .vim/extra/config/* ~/.config/
-cp -r .vim/extra/bin/* ~/.local/bin
-```
-Note: be sure to set the email address in `.config/git/config`.
-
-- Initialize plugins: `:PlugInstall`
-- Update plugins: `:PlugUpdate`
-- Cleanup removed plugins: `:PlugClean`
-
 # Machine setup
 
 ## Linux
@@ -33,6 +10,8 @@ sudo apt upgrade
 sudo apt install build-essential pkg-config libssl-dev cmake curl unzip vim
 sudo apt install ripgrep
 ```
+
+### Fedora-derived
 
 ### Manjaro
 
@@ -150,3 +129,26 @@ cargo install cargo-bloat cargo-expand cargo-hack cargo-llvm-lines cargo-outdate
 cargo install --locked --git https://github.com/getzola/zola
 cargo install --git https://github.com/rust-lang/measureme crox flamegraph summarize
 ```
+
+# Managing vim
+
+Setup [SSH keys with github](https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git).
+
+Setup [ssh-agent](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows) if needed
+
+Deploy
+```bash
+cd ~
+git clone git@github.com:epage/vimfiles.git .vim
+cp .vim/extra/.vimrc ~/
+cp .vim/extra/.tmux.conf ~/
+cp -r .vim/extra/.cargo ~/
+mkdir -p ~/.config ~/.local/bin
+cp -r .vim/extra/config/* ~/.config/
+cp -r .vim/extra/bin/* ~/.local/bin
+```
+Note: be sure to set the email address in `.config/git/config`.
+
+- Initialize plugins: `:PlugInstall`
+- Update plugins: `:PlugUpdate`
+- Cleanup removed plugins: `:PlugClean`
