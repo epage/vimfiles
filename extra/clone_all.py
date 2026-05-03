@@ -55,6 +55,9 @@ def prepare_repo(root, repo):
             subprocess.run(["git", "-C", repo_root, "reset", "--hard", f"{remote_name}/{branch_name}"], encoding="utf-8", capture_output=True)
             #subprocess.run(["jj", "bookmark", "track", branch_name, "--remote", remote_name], cwd=repo_root, capture_output=True, encoding="utf-8", check=True)
 
+    if (repo_root / "Cargo.toml").exists():
+        subprocess.run(["cargo", "fetch"], cwd=repo_root, encoding="utf-8", capture_output=True)
+
     hook = repo_root / ".pre-commit-config.yaml"
     if hook.exists():
         managed_hook_path = repo_root / ".git/hooks/pre-commit"
