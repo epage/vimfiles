@@ -136,22 +136,17 @@ el choco install winmerge -y
 ```bash
 rustup install beta nightly
 rustup component add rustfmt clippy
-cargo install bacon
 cargo install bat
+cargo install fd-find
+cargo install hyperfine
+cargo install tokei
+cargo install bacon
 cargo install broot
 cargo install ddh
-cargo install fd-find
 cargo install hexyl
-cargo install hyperfine
 cargo install mdbook
 cargo install rumdl
-cargo install tokei
-cargo install zola
-cargo install cargo-bloat
-cargo install cargo-expand
-cargo install cargo-hack
-cargo install cargo-llvm-lines
-cargo install cargo-outdated
-cargo install cargo-show-asm
+cargo install cargo-bloat cargo-expand cargo-hack cargo-llvm-lines cargo-outdated cargo-show-asm
+cargo install --locked --git https://github.com/getzola/zola
 cargo install --git https://github.com/rust-lang/measureme crox flamegraph summarize
 ```
