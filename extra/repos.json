@@ -91,11 +91,7 @@
     },
     "cargo": {
         "branches": [
-            "log",
-            "transitive",
-            "script-stable",
-            "warning",
-            "lockfile-path"
+            "script-stable"
         ],
         "name": "cargo",
         "remotes": {
