@@ -13,6 +13,10 @@ sudo apt install ripgrep
 
 ### Fedora-derived
 
+```bash
+sudo dnf install perl
+```
+
 ### Manjaro
 
 ```bash
