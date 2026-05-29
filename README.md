@@ -40,6 +40,7 @@ source ~/.cargo/env
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d ~/.fonts && rm FiraCode.zip
 fc-cache -f -v
+mkdir -p ~/.local/bin
 curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 ```
 
