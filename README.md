@@ -45,6 +45,7 @@ curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 ```
 
 Install
+- https://wezterm.org/install/linux.html#__tabbed_1_3
 - https://github.com/zellij-org/zellij/releases
 - https://github.com/neovim/neovim/releases
 - https://github.com/cli/cli/blob/trunk/docs/install_linux.md
