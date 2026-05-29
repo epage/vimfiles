@@ -174,9 +174,6 @@
         }
     },
     "cargo-tnew": {
-        "branches": [
-            "workspace"
-        ],
         "name": "cargo-tnew",
         "remotes": {
             "_rust": "git@github.com:epage/_rust.git",
@@ -227,6 +224,9 @@
         }
     },
     "cobalt-org.github.io": {
+        "branches": [
+            "source"
+        ],
         "name": "cobalt-org.github.io",
         "remotes": {
             "origin": "git@github.com:epage/cobalt-org.github.io.git",
@@ -319,7 +319,7 @@
     },
     "epage.github.io": {
         "branches": [
-            "job"
+            "source"
         ],
         "name": "epage.github.io",
         "remotes": {
@@ -447,11 +447,7 @@
     },
     "gtr-cards": {
         "branches": [
-            "custom",
-            "blackbox-updates",
-            "mini",
-            "blackbox",
-            "original"
+            "blackbox"
         ],
         "name": "gtr-cards",
         "remotes": {
@@ -541,6 +537,9 @@
         }
     },
     "once_cell_polyfill": {
+        "branches": [
+            "main-v1.56"
+        ],
         "name": "once_cell_polyfill",
         "remotes": {
             "origin": "git@github.com:epage/once_cell_polyfill.git",
@@ -663,24 +662,12 @@
     },
     "rust-rfcs": {
         "branches": [
-            "inherit-default",
-            "edits",
-            "used-deps",
-            "global",
-            "split-home",
-            "nit-lint-level"
+            "inherit-default"
         ],
         "name": "rust-rfcs",
         "remotes": {
             "origin": "git@github.com:epage/rfcs.git",
             "upstream": "git@github.com:rust-lang/rfcs.git"
-        }
-    },
-    "rust-team": {
-        "name": "rust-team",
-        "remotes": {
-            "origin": "git@github.com:epage/team.git",
-            "upstream": "https://github.com/rust-lang/team.git"
         }
     },
     "rustest": {
@@ -691,9 +678,6 @@
         }
     },
     "rustfmt": {
-        "branches": [
-            "frontmatter"
-        ],
         "name": "rustfmt",
         "remotes": {
             "origin": "git@github.com:epage/rustfmt.git",
@@ -829,19 +813,9 @@
         }
     },
     "zed": {
-        "branches": [
-            "profile"
-        ],
         "name": "zed",
         "remotes": {
             "origin": "https://github.com/zed-industries/zed.git"
-        }
-    },
-    "zizmor": {
-        "name": "zizmor",
-        "remotes": {
-            "origin": "git@github.com:epage/zizmor.git",
-            "upstream": "https://github.com/zizmorcore/zizmor.git"
         }
     }
 }
