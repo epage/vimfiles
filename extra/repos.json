@@ -91,6 +91,7 @@
     },
     "cargo": {
         "branches": [
+            "build.warnings",
             "script-stable"
         ],
         "name": "cargo",
@@ -164,6 +165,17 @@
         "remotes": {
             "origin": "git@github.com:epage/cargo-semver-checks-action.git",
             "upstream": "https://github.com/obi1kenobi/cargo-semver-checks-action.git"
+        }
+    },
+    "cargo-ship": {
+        "branches": [
+            "adapt"
+        ],
+        "name": "cargo-ship",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/_rust.git",
+            "upstream": "git@github.com:epage/_rust.git"
         }
     },
     "cargo-team": {
@@ -302,6 +314,14 @@
             "upstream": "https://github.com/rust-lang/edition-guide.git"
         }
     },
+    "engarde": {
+        "name": "engarde",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/engarde.git",
+            "upstream": "git@github.com:ssg-rs/engarde.git"
+        }
+    },
     "env_logger": {
         "name": "env_logger",
         "remotes": {
@@ -347,6 +367,14 @@
         "remotes": {
             "origin": "git@github.com:epage/eztd.git",
             "upstream": "git@github.com:epage/eztd.git"
+        }
+    },
+    "file-serve": {
+        "name": "file-serve",
+        "remotes": {
+            "_rust": "git@github.com:epage/_rust.git",
+            "origin": "git@github.com:epage/file-serve.git",
+            "upstream": "git@github.com:ssg-rs/file-serve.git"
         }
     },
     "gecko-dev": {
@@ -661,9 +689,6 @@
         }
     },
     "rust-rfcs": {
-        "branches": [
-            "inherit-default"
-        ],
         "name": "rust-rfcs",
         "remotes": {
             "origin": "git@github.com:epage/rfcs.git",
