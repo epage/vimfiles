@@ -80,8 +80,8 @@ eval "$(starship init bash)"
 
 brew install bash
 brew install git bash-completion
-brew install macvim neovim ripgrep fd zellij
-brew cask install diffmerge firefox iterm2 dropbox sweet-home3d
+brew install macvim neovim ripgrep fd zellij jj prek gh
+brew install --cask wezterm firefox dropbox
 
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
 source ~/.cargo/env
