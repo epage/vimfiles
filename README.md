@@ -81,7 +81,7 @@ eval "$(starship init bash)"
 brew install bash
 brew install git bash-completion
 brew install macvim neovim ripgrep fd zellij jj prek gh starship wget
-brew install bat fd hyperfine tokei bacon broot ddh hexyl mdbook rumdl cargo-expand cargo-hack cargo-llvm-lines zola
+brew install bat fd hyperfine tokei bacon broot ddh hexyl mdbook rumdl cargo-expand cargo-hack cargo-llvm-lines zola zizmor
 brew install --cask wezterm firefox dropbox
 
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal
